@@ -445,4 +445,41 @@ mailChimp();
 
 
 
-})(jQuery);	
+})(jQuery);
+
+//Slider automation
+
+document.addEventListener('DOMContentLoaded', () => {
+        const slider = document.querySelector('.slider_bg');
+        const images = [
+            'url(img/banner/home_slider_2.png)',
+            'url(img/banner/home_slider_1.jpeg)'
+        ]; // List all your images here
+        let currentIndex = 0;
+
+        // Preload images
+        const preloadedImages = images.map(src => {
+            const img = new Image();
+            img.src = src.replace('url(', '').replace(')', '').replace(/"/g, '');
+            return img;
+        });
+
+        // Change background
+        function changeBackground() {
+            slider.style.backgroundImage = images[currentIndex];
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        // Wait for all images to load before starting the slider
+        Promise.all(preloadedImages.map(img => new Promise(resolve => {
+            img.onload = resolve;
+        }))).then(() => {
+            // Set initial background
+            changeBackground();
+
+            // Start the background change interval
+            setInterval(changeBackground, 2000); // Change every 5 seconds
+        }).catch(error => {
+            console.error('Error preloading images:', error);
+        });
+    });
