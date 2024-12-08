@@ -453,6 +453,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const slider = document.querySelector('.slider_bg');
         const images = [
             'url(img/banner/home_slider_2.png)',
+            'url(img/banner/home_slider_3.png)',
             'url(img/banner/home_slider_1.jpeg)'
         ]; // List all your images here
         let currentIndex = 0;
@@ -483,3 +484,20 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error preloading images:', error);
         });
     });
+
+//Highlights active/current page in menu
+    // Get all menu items
+    const menuItems = document.querySelectorAll('.uk-menu-item a');
+
+    // Loop through each menu item
+    menuItems.forEach(item => {
+        // Get the current page URL
+        const currentUrl = window.location.href;
+
+        // Check if the link's href matches the current URL
+        if (currentUrl.includes(item.getAttribute('href'))) {
+            // Add the 'active' class to the current menu item
+            item.parentElement.classList.add('active');
+        }
+    });
+

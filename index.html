@@ -32,82 +32,37 @@
           href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-menu-style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
 <!-- header-start -->
-<header>
-    <div class="header-area ">
-        <div class="header-top_area d-none d-lg-block">
-            <!--
-                            <div class="container">
-                                <div class="row align-items-center">
-                                    <div class="col-xl-4 col-lg-4">
-                                        <div class="logo">
-                                            &lt;!&ndash;<a href="index.html">
-                                                <img src="img/logo_ucsco_transparent.png" alt="">
-                                            </a>&ndash;&gt;
-                                            <h2  style="color: #FF3414;">UCSCO</h2>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-            -->
-        </div>
-        <div id="sticky-header" class="main-header-area">
-            <div class="container">
-                <div class="header_bottom_border">
-                    <div class="row align-items-center">
-                        <div class="col-12 d-block d-lg-none">
-                        </div>
-                        <div class="col-xl-9 col-lg-9">
-                            <div class="main-menu  d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a href="index.html">home</a></li>
-                                        <li><a href="our_brands.html">Our Brands</a></li>
-                                        <li><a href="our_supplies.html">Our Supplies</a></li>
-                                        <li><a href="our_services.html">Our Services</a></li>
-                                        <li><a href="About.html">About</a></li>
-                                        <li><a href="gallery.html">Our Showroom</a></li>
-<!--
-                                        <li><a href="contact.html">Contact</a></li>
--->
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+<header class="uk-navbar">
+    <div class="uk-logo">
+        <img src="img/logo_ucsco_transparent.png" alt="Logo">
     </div>
+    <nav class="uk-nav-links">
+        <ul class="uk-menu">
+            <li class="uk-menu-item"><a href="index.html">Home</a></li>
+            <li class="uk-menu-item"><a href="About.html">About</a></li>
+            <li class="uk-menu-item uk-has-submenu">
+                <a href="our_brands.html">Our Brands</a>
+                <ul class="uk-submenu">
+                    <li class="uk-submenu-item"><a href="brand_details.html?brand=brand1">Brand 1</a></li>
+                    <li class="uk-submenu-item"><a href="brand_details.html?brand=brand2">Brand 2</a></li>
+                    <li class="uk-submenu-item"><a href="brand_details.html?brand=brand3">Brand New Brand 3</a></li>
+                </ul>
+            </li>
+            <li class="uk-menu-item"><a href="our_supplies.html">Our Supplies</a></li>
+            <li class="uk-menu-item"><a href="our_services.html">Our Services</a></li>
+            <li class="uk-menu-item"><a href="gallery.html">Our Showroom</a></li>
+            <li class="uk-menu-item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 </header>
+
 <!-- header-end -->
-
-<!-- slider_area_start -->
-<!--
-<div class="slider_area">
-    <div class="single_slider  d-flex align-items-center slider_bg_1">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-xl-8">
-                    <div class="slider_text text-center justify-content-center">
-                        <p>For Personal & Business use</p>
-                        <h3>Global Excellence, Local Expertise</h3>
-                        <a class="boxed-btn3" href="our_supplies.html">Our Services</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
--->
-
 <!-- slider_area_start -->
 <div class="slider_area">
     <div class="single_slider d-flex align-items-center slider_bg">
@@ -403,70 +358,6 @@
 </div>
 <!-- /counter_area  -->
 
-<!-- testimonial_area  -->
-<div class="testimonial_area">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-7">
-                <div class="testmonial_active owl-carousel">
-                    <div class="single_carousel">
-                        <div class="single_testmonial text-center">
-                            <div class="quote">
-                                <img src="img/svg_icon/quote.svg" alt="">
-                            </div>
-                            <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
-                                sollicitudin.
-                                Pellentesque id dolor tempor sapien feugiat ultrices.</p>
-                            <div class="testmonial_author">
-                                <div class="thumb">
-                                    <img src="img/case/testmonial.png" alt="">
-                                </div>
-                                <h3>Robert Thomson</h3>
-                                <span>Business Owner</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single_carousel">
-                        <div class="single_testmonial text-center">
-                            <div class="quote">
-                                <img src="img/svg_icon/quote.svg" alt="">
-                            </div>
-                            <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
-                                sollicitudin.
-                                Pellentesque id dolor tempor sapien feugiat ultrices.</p>
-                            <div class="testmonial_author">
-                                <div class="thumb">
-                                    <img src="img/case/testmonial.png" alt="">
-                                </div>
-                                <h3>Robert Thomson</h3>
-                                <span>Business Owner</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single_carousel">
-                        <div class="single_testmonial text-center">
-                            <div class="quote">
-                                <img src="img/svg_icon/quote.svg" alt="">
-                            </div>
-                            <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
-                                sollicitudin.
-                                Pellentesque id dolor tempor sapien feugiat exapmle main.</p>
-                            <div class="testmonial_author">
-                                <div class="thumb">
-                                    <img src="img/case/testmonial.png" alt="">
-                                </div>
-                                <h3>Robert Thomson</h3>
-                                <span>Business Owner</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /testimonial_area  -->
-
 <!-- Estimate_area start  -->
 <div class="Estimate_area overlay">
     <div class="container">
@@ -524,49 +415,6 @@
     </div>
 </div>
 <!-- Estimate_area end  -->
-
-<!-- contact_location  -->
-
-<div class="contact_location">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6">
-                <div class="location_left">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="img/logo_ucsco_transparent.png" alt="">
-                        </a>
-                    </div>
-                    <ul>
-                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                        <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
-                        <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                        <li><a href="#"> <i class="fa fa-youtube"></i> </a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-xl-3 col-md-3">
-                <div class="single_location">
-                    <h3><img src="img/icon/address.svg" alt=""> Location</h3>
-                    <p>Kingdom of Saudi Arabia <br> Office#:5, Saad Complex, <br>Arafat Rd, Ad Dar
-                        Al Baida, <br>Riyadh</p>
-
-                </div>
-            </div>
-            <div class="col-xl-3 col-md-3">
-                <div class="single_location">
-                    <h3><img src="img/icon/support.svg" alt=""> Connect</h3>
-                    <p>Mob: +966 597745757<br>
-                        Mail: info@ucscoksa.com <br>
-                        Working hrs: 9am to 6pm</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--/ contact_location  -->
-
 
 <!-- footer start -->
 <footer class="footer">
@@ -695,47 +543,6 @@
 
 
 <script src="js/main.js"></script>
-
-<!-- Your existing HTML -->
-<!--
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const slider = document.querySelector('.slider_bg');
-        const images = [
-            'url(img/banner/home_slider_2.png)',
-            'url(img/banner/home_slider_1.jpeg)'
-        ]; // List all your images here
-        let currentIndex = 0;
-
-        // Preload images
-        const preloadedImages = images.map(src => {
-            const img = new Image();
-            img.src = src.replace('url(', '').replace(')', '').replace(/"/g, '');
-            return img;
-        });
-
-        // Change background
-        function changeBackground() {
-            slider.style.backgroundImage = images[currentIndex];
-            currentIndex = (currentIndex + 1) % images.length;
-        }
-
-        // Wait for all images to load before starting the slider
-        Promise.all(preloadedImages.map(img => new Promise(resolve => {
-            img.onload = resolve;
-        }))).then(() => {
-            // Set initial background
-            changeBackground();
-
-            // Start the background change interval
-            setInterval(changeBackground, 2000); // Change every 5 seconds
-        }).catch(error => {
-            console.error('Error preloading images:', error);
-        });
-    });
-</script>
--->
-
 
 </body>
 
