@@ -31,8 +31,16 @@
     <link rel="stylesheet"
           href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
 
+
+
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav-menu-style.css">
+
+<!--
+    //Arrow icons scroll to top
+-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -64,6 +72,7 @@
 
 <!-- header-end -->
 <!-- slider_area_start -->
+<!--
 <div class="slider_area">
     <div class="single_slider d-flex align-items-center slider_bg">
         <div class="container">
@@ -79,6 +88,20 @@
         </div>
     </div>
 </div>
+-->
+
+<div class="uk-homepage-slider slider_bg">
+    <div class="uk-slider-content">
+        <h1 class="uk-motto">Your Complete Supply Partner</h1>
+        <div class="uk-separator"></div> <!-- Separator Line -->
+        <p class="uk-description">
+            UCSCO Established in 2020, international & leading Saudi company currently serving US Military, Prime Contractors based in Prince Sultan AB, Eskan Village AB, King Abdul Aziz AB & King Fahd AB’s, Ministries, Oil Industries, Aramco & Trading Companies in the area of Kingdom of Saudi Arabia &Middle East.        </p>
+        <div class="about_btn">
+            <a class="boxed-btn3-line" href="contact.html">Contact Us</a>
+        </div>
+    </div>
+</div>
+
 
 <!-- slider_area_end -->
 
@@ -284,39 +307,49 @@
     </div>
 </div>
 <!--/ chose_area  -->
-<div class="chose_area ">
+<!-----Our Brands---->
+<div class="service_area">
     <div class="container">
-        <div class="features_main_wrap">
-            <div class="row  align-items-center">
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="features_info">
-                        <h3>Grainger</h3>
-                        <p>W.W. Grainger, Inc., is a leading broad line distributor with operations
-                            primarily in North America, Japan
-                            and the United Kingdom. At Grainger, We Keep the World Working® by
-                            serving more than 4.5 million
-                            customers worldwide with products delivered through innovative
-                            technology and deep customer
-                            relationships. With 2023 sales of $16.5 billion, the Company operates
-                            two business models. In the High
-                            Touch Solutions segment, Grainger offers approximately 2 million
-                            maintenances, repair and operating
-                            (MRO) products and services, including technical support and inventory
-                            management.
-                        </p>
-
-                        <div class="about_btn">
-                            <a class="boxed-btn3-line" href="https://www.grainger.com/"
-                               target="_blank" rel="noopener noreferrer">More Details</a>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title mb-50 text-center">
+                    <h3>
+                        Our Brands
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="service_active owl-carousel">
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/our_brands/melwaukee.jpg" alt="">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="service_details.html">Milwaukee</a></h3>
+                            <p>Milwaukee Electric Tool Corporation, known more commonly as Milwaukee Tool, is a multi-national company that develops, manufactures, and markets power tools, hand tools, tool accessories, tool storage, and personal protective equipment.</p>
+                        </div>
+                    </div>
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/our_brands/grainger_transparent.png" alt="">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="service_details.html">Grainger</a></h3>
+                            <p>W.W. Grainger, Inc., is a leading broad line distributor with operations primarily in North America, Japan and the United Kingdom. At Grainger, We Keep the World Working® by serving more than 4.5 million customers worldwide </p>
+                        </div>
+                    </div>
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/our_brands/dewalt.webp" alt="">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="service_details.html">Dewalt</a></h3>
+                            <p>The DeWalt Industrial Tool Company is an American worldwide manufacturer of power tools and hand tools for the construction, manufacturing and woodworking industries, as well as home craftspeople.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-5 col-md-6">
-                    <div class="grainger_image">
-                        <img src="img/grainger_transparent.png" alt="">
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
@@ -499,18 +532,14 @@
 <!--/ footer end  -->
 <!-- Button trigger modal -->
 
-<!-- Modal -->
-<div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="serch_form">
-                <input type="text" placeholder="search">
-                <button type="submit">search</button>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- Scroll Top -->
+<!-- Scroll to Top Button -->
+
+<button class="scroll-to-top" id="scrollToTopBtn">
+    <i class="bi bi-arrow-up-short"></i> <!-- Replace "bi bi-arrow-up-short" with your preferred icon library -->
+</button>
+
+<!-- Modal -->>
 
 <!-- JS here -->
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>

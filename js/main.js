@@ -501,3 +501,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+
+/**
+   * Scroll top button
+   */
+ // Get the button
+ const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+ // Show the button when the user scrolls down 200px
+ window.onscroll = function() {
+     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+         scrollToTopBtn.style.display = "block"; // Show button
+     } else {
+         scrollToTopBtn.style.display = "none"; // Hide button
+     }
+ };
+
+ // Scroll smoothly to the top when the button is clicked
+ scrollToTopBtn.onclick = function() {
+     window.scrollTo({ top: 0, behavior: "smooth" });
+ };

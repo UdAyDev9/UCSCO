@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-menu-style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -35,70 +36,28 @@
 
 
     <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div class="header-top_area d-none d-lg-block">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-4 col-lg-4">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo_ucsco_transparent.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-md-8">
-                            <div class="header_right d-flex align-items-center">
-                                <div class="short_contact_list">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-envelope"></i> info@ucscoksa.com</a></li>
-                                        <li><a href="#"> <i class="fa fa-phone"></i> +966 597745757</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="book_btn d-none d-lg-block">
-                                                                        <a class="boxed-btn3-line" href="contact.html">Get Free Quote</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="sticky-header" class="main-header-area">
-                <div class="container">
-                    <div class="header_bottom_border">
-                        <div class="row align-items-center">
-                            <div class="col-12 d-block d-lg-none">
-                                <div class="logo">
-                                    <a href="index.html">
-                                        <img src="img/logo_ucsco_transparent.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xl-9 col-lg-9">
-                                <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a  href="index.html">home</a></li>
-                                            <li><a  href="our_supplies.html">Products</a></li>
-                                            <li><a  href="service_details.html">Product Details</a></li>
-                                            <li><a href="About.html">about</a></li>
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+    <header class="uk-navbar">
+        <div class="uk-logo">
+            <img src="img/logo_ucsco_transparent.png" alt="Logo">
         </div>
+        <nav class="uk-nav-links">
+            <ul class="uk-menu">
+                <li class="uk-menu-item"><a href="index.html">Home</a></li>
+                <li class="uk-menu-item"><a href="About.html">About</a></li>
+                <li class="uk-menu-item uk-has-submenu">
+                    <a href="our_brands.html">Our Brands</a>
+                    <ul class="uk-submenu">
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=brand1">Brand 1</a></li>
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=brand2">Brand 2</a></li>
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=brand3">Brand New Brand 3</a></li>
+                    </ul>
+                </li>
+                <li class="uk-menu-item"><a href="our_supplies.html">Our Supplies</a></li>
+                <li class="uk-menu-item"><a href="our_services.html">Our Services</a></li>
+                <li class="uk-menu-item"><a href="gallery.html">Our Showroom</a></li>
+                <li class="uk-menu-item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- header-end -->
     <!-- bradcam_area  -->
@@ -121,96 +80,38 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="single_service">
                         <div class="thumb">
-                            <img src="img/service/1.png" alt="">
+                            <img src="img/our_brands/melwaukee.jpg" alt="">
                         </div>
                         <div class="service_info">
-                            <h3><a href="service_details.html">Hardware Equipment’s & Tools</a></h3>
-                            <p>Power tools, Welding machines, Air
-                                compressor machines, Hand tools,
-                                Diesel generators, High pressure
-                                cleaners, Pneumatic tools and more</p>
+                            <h3><a href="service_details.html">Milwaukee</a></h3>
+                            <p>Milwaukee Electric Tool Corporation, known more commonly as Milwaukee Tool, is a multi-national company that develops, manufactures, and markets power tools, hand tools, tool accessories, tool storage, and personal protective equipment.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/our_brands/grainger_transparent.png" alt="">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="service_details.html">Grainger</a></h3>
+                            <p>W.W. Grainger, Inc., is a leading broad line distributor with operations primarily in North America, Japan and the United Kingdom. At Grainger, We Keep the World Working® by serving more than 4.5 million customers worldwide </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="single_service">
                         <div class="thumb">
-                            <img src="img/service/3.png" alt="">
+                            <img src="img/our_brands/dewalt.webp" alt="">
                         </div>
                         <div class="service_info">
-                            <h3><a href="service_details.html">Electrical</a></h3>
-                            <p>Distribution panels, Breakers,
-                                Cables & Wires, Conduit pipes,
-                                Fittings, Lightings, Wiring
-                                accessories, Fuses, Contactors,
-                                Control relays, Cable glands &
-                                Lugs, Isolators, Transformers,
-                                Fixtures and more</p>
+                            <h3><a href="service_details.html">Dewalt</a></h3>
+                            <p>The DeWalt Industrial Tool Company is an American worldwide manufacturer of power tools and hand tools for the construction, manufacturing and woodworking industries, as well as home craftspeople.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_service">
-                        <div class="thumb">
-                            <img src="img/service/1.png" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h3><a href="service_details.html">Plumbing & Sanitation</a></h3>
-                            <p>PVC, CPVC & UPVC Pipes with various
-                                sizes, Pressure Flow control valves,
-                                Check Valves, Fitting Brushes, Basin
-                                Wrenches, Relief Valves, Pipe Nipples &
-                                Accessories, Cable Clamps, Hangers,
-                                Repair Kits and more</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_service">
-                        <div class="thumb">
-                            <img src="img/service/1.png" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h3><a href="service_details.html">Pumps</a></h3>
-                            <p>Airlift Pump, Axial Flow Pump, Beam
-                                Pump, Engine Driven Pump, Walking
-                                Beam Pump, Centrifugal Pump, Chain
-                                Pump, Circulator Pump, Concrete Pump,
-                                Cyclic Pump, Diving Pump and more</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_service">
-                        <div class="thumb">
-                            <img src="img/service/1.png" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h3><a href="service_details.html">HVAC (Heating, Ventilating and Air Conditioning)</a></h3>
-                            <p>Air Conditioner, Air Filter, Boiler, Circulator
-                                Pump, Cooling Tower, Chilled Beam,
-                                Diffuser, Duct, Economizer, Evaporative
-                                Cooler, Fan (Mechanical), Heat Exchanger,
-                                Humidifier</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_service">
-                        <div class="thumb">
-                            <img src="img/service/2.png" alt="">
-                        </div>
-                        <div class="service_info">
-                            <h3><a href="service_details.html">Generators & Heavy Equipment’s</a></h3>
-                            <p>Diesel Generators, Ground
-                                Support Equipment’s, High &
-                                Pressure Washers, High
-                                Pressure Cleaners, Vacuums,
-                                Spray-Extraction Cleaners, Air
-                                Blower and more</p>
-                        </div>
-                    </div>
-                </div>
+
 
             </div>
         </div>
