@@ -1,0 +1,163 @@
+/* Import the Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --nav-bg-color: white; /* Background color for the navigation bar */
+    --nav-text-color: #333; /* Default text color for main items */
+    --nav-hover-text-color: #FF3414; /* Text color on hover for main items */
+    --submenu-bg-color: white; /* Background color for submenu */
+    --submenu-hover-bg-color: #FF3414; /* Hover background color for submenu */
+    --submenu-hover-text-color: white; /* Hover text color for submenu */
+    --submenu-border-color: rgba(0, 0, 0, 0.1); /* Submenu border or shadow color */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Shadow color for elements */
+    --transition-speed: 0.3s; /* Speed for transitions and animations */
+    --submenu-border-radius: 5px; /* Border radius for submenus */
+    --font-family: 'Poppins', Arial; /* Default font family */
+    --text-padding: 10px 20px; /* Padding for text items */
+    --submenu-width: 200px; /* Minimum width for submenu */
+    --main-item-color: #333; /* Color for main menu items */
+    --main-item-hover-color: #FF3414; /* Hover color for main menu items */
+}
+
+/* General Styles */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.uk-navbar {
+    position: sticky; /* Makes the header sticky */
+    top: 0; /* Sticks the header to the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--nav-bg-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+/* Logo */
+.uk-logo img {
+    height: 40px;
+}
+
+.uk-logo {
+    margin-right: 40px; /* Add space between logo and navigation */
+}
+
+/* Menu Styles */
+.uk-nav-links {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.uk-menu {
+    list-style: none;
+    display: flex;
+    gap: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+.uk-menu-item {
+    position: relative;
+}
+
+/* Main Menu Items */
+.uk-menu-item a {
+    display: block; /* Ensures the link spans the full width of the menu item */
+    padding: var(--text-padding); /* Adds consistent padding for better spacing */
+    text-align: center; /* Centers the text */
+    text-decoration: none; /* Removes underline */
+    color: var(--main-item-color); /* Default color for main menu items */
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Main Menu Items */
+.uk-menu-item a:hover {
+    background-color: var(--nav-bg-color); /* No background color change on hover */
+    color: var(--main-item-hover-color); /* Text color on hover */
+}
+
+/* Submenu Items */
+.uk-submenu-item a {
+    display: block; /* Ensures the link spans the full width of the menu item */
+    padding: var(--text-padding); /* Adds consistent padding for better spacing */
+    text-align: center; /* Centers the text */
+    text-decoration: none; /* Removes underline */
+    color: var(--nav-text-color); /* Default text color */
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Submenu Items */
+.uk-submenu-item a:hover {
+    background-color: var(--submenu-hover-bg-color); /* Highlight color for the entire item */
+    color: var(--submenu-hover-text-color); /* Text color on hover */
+}
+
+/* Submenu Styles */
+.uk-submenu {
+    position: absolute;
+    top: 100%; /* Aligns submenu directly below the parent */
+    left: 0;
+    background-color: var(--submenu-bg-color);
+    border-radius: var(--submenu-border-radius); /* Optional for rounded corners */
+    box-shadow: 0 4px 8px var(--shadow-color); /* Adds a subtle shadow */
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    list-style: none; /* Removes default list styling */
+    min-width: var(--submenu-width); /* Ensures consistent width */
+    z-index: 100; /* Keeps submenu above other elements */
+}
+
+/* Show submenu on hover */
+.uk-has-submenu:hover .uk-submenu {
+    display: flex; /* Show submenu on hover */
+    animation: fadeIn var(--transition-speed) ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .uk-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .uk-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .uk-menu-item {
+        text-align: left;
+    }
+}
+
+/* Submenu Item Styling for Last Child */
+.uk-submenu-item:last-child a {
+    border-bottom-left-radius: var(--submenu-border-radius); /* Match the container's border radius */
+    border-bottom-right-radius: var(--submenu-border-radius);
+}
+
+/* Add styles for active menu item */
+.uk-menu-item.active a {
+    color: var(--nav-hover-text-color); /* Highlighted text color */
+    background-color: var(--nav-hover-bg-color); /* Background color when active */
+}
