@@ -452,9 +452,11 @@ mailChimp();
 document.addEventListener('DOMContentLoaded', () => {
         const slider = document.querySelector('.slider_bg');
         const images = [
+            'url(img/banner/slide_5.png)',
             'url(img/banner/home_slider_2.png)',
             'url(img/banner/home_slider_3.png)',
-            'url(img/banner/home_slider_1.jpeg)'
+            'url(img/banner/home_slider_1.jpeg)',
+            'url(img/banner/home_slider_4.jpg)'
         ]; // List all your images here
         let currentIndex = 0;
 
@@ -479,7 +481,7 @@ document.addEventListener('DOMContentLoaded', () => {
             changeBackground();
 
             // Start the background change interval
-            setInterval(changeBackground, 2000); // Change every 5 seconds
+            setInterval(changeBackground, 5000); // Change every 5 seconds
         }).catch(error => {
             console.error('Error preloading images:', error);
         });
