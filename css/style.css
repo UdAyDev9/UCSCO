@@ -9084,3 +9084,108 @@ Slider Starts*/
 .scroll-to-top:focus {
     outline: none; /* Removes outline on click */
 }
+
+/*---------------------------------------------------------------Our Clients Starts-----------------------------------/*
+.uk_client_area {
+  background: #F5FBFF;
+  padding: 120px 0 90px 0;
+}
+
+@media (max-width: 767px) {
+  /* Adjust padding for smaller screens */
+  .uk_client_area {
+    padding: 50px 0 20px 0;
+  }
+}
+
+/* Ensure that the carousel is displayed with no gaps */
+.uk_client_area .owl-carousel {
+  display: flex;
+  justify-content: space-between;  /* Equally space the logos */
+  margin: 0 auto; /* Center the carousel */
+  gap: 20px;  /* Adds space between logos */
+}
+
+/* For single client logo container */
+.uk_client_area .single_uk_client {
+  display: inline-block;
+  width: calc(100% / 5); /* Ensure 5 logos across */
+  padding: 0 10px; /* Adds space between logos */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  text-align: center; /* Center the logos */
+}
+
+/* Ensure that the thumb container maintains correct dimensions */
+.uk_client_area .single_uk_client .thumb {
+  overflow: hidden;
+  position: relative;
+  height: 150px; /* Fixed height */
+  width: 150px; /* Fixed width */
+  margin: 0 auto; /* Center the logos */
+}
+
+.uk_client_area .single_uk_client .thumb::before {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: var(--primary-color);
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  transition: 0.3s;
+  content: '';
+}
+
+.uk_client_area .single_uk_client .thumb img {
+  width: 100% !important;
+  height: 100% !important; /* Ensure image fits the container */
+  object-fit: contain; /* Ensure aspect ratio is maintained */
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+
+@media (max-width: 1024px) {
+  /* Show 4 logos on medium-sized screens */
+  .uk_client_area .single_uk_client {
+    width: calc(100% / 4);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Show 3 logos on smaller screens */
+  .uk_client_area .single_uk_client {
+    width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 480px) {
+  /* Show 2 logos on very small screens */
+  .uk_client_area .single_uk_client {
+    width: calc(100% / 2);
+  }
+}
+
+/*---------------------------------------------------------------Our Clients Ends-----------------------------------*/
+/*
+#v-pills-tab a {
+    text-align: center; */
+/* Center-align the text *//*
+
+    display: block; */
+/* Ensure the block-level display for alignment *//*
+
+    margin: 0 auto; */
+/* Center within the container *//*
+
+}*/
+#v-pills-tab-brand {
+    width: 150px; /* Adjust the width as needed */
+    margin-left: 20px; /* Align the tab menu to the left */
+}
+
+#v-pills-tab-brand a {
+    text-align: left; /* Keep text aligned in the center */
+    padding: 20px 0; /* Adjust padding for better spacing */
+}

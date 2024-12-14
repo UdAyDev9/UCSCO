@@ -7,6 +7,8 @@
     <title>Transportion</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/fav_icon.png">
@@ -27,6 +29,7 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-menu-style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -34,70 +37,33 @@
 
 
     <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div class="header-top_area d-none d-lg-block">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-4 col-lg-4">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo_ucsco_transparent.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-md-8">
-                            <div class="header_right d-flex align-items-center">
-                                <div class="short_contact_list">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-envelope"></i> info@ucscoksa.com</a></li>
-                                        <li><a href="#"> <i class="fa fa-phone"></i> +966 597745757</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="book_btn d-none d-lg-block">
-                                                                        <a class="boxed-btn3-line" href="contact.html">Get Free Quote</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="sticky-header" class="main-header-area">
-                <div class="container">
-                    <div class="header_bottom_border">
-                        <div class="row align-items-center">
-                            <div class="col-12 d-block d-lg-none">
-                                <div class="logo">
-                                    <a href="index.html">
-                                        <img src="img/logo_ucsco_transparent.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xl-9 col-lg-9">
-                                <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a  href="index.html">home</a></li>
-                                            <li><a  href="our_supplies.html">Products</a></li>
-                                            <li><a  href="service_details.html">Product Details</a></li>
-                                            <li><a href="About.html">about</a></li>
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+    <header class="uk-navbar">
+        <div class="uk-logo">
+            <img src="img/full_logo_hd_new.png" alt="Logo">
         </div>
+        <!-- <div class="uk-logo-name">
+             <img src="img/logo_name.png" alt="Logo Name">
+         </div>-->
+        <nav class="uk-nav-links">
+            <ul class="uk-menu">
+                <li class="uk-menu-item"><a href="index.html">Home</a></li>
+                <li class="uk-menu-item"><a href="about.html">About</a></li>
+                <li class="uk-menu-item uk-has-submenu">
+                    <a href="our_brands.html">Our Brands</a>
+                    <ul class="uk-submenu">
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=grainger">Grainger</a></li>
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=milwaukee">Milwaukee</a></li>
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=pelican">Pelican</a></li>
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=dewalt">Dewalt</a></li>
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=brady">Brady</a></li>
+                    </ul>
+                </li>
+                <li class="uk-menu-item"><a href="our_supplies.html">Our Supplies</a></li>
+                <li class="uk-menu-item"><a href="our_services.html">Our Services</a></li>
+                <li class="uk-menu-item"><a href="gallery.html">Our Showroom</a></li>
+                <li class="uk-menu-item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- header-end -->
 
@@ -121,150 +87,85 @@
             <div class="row">
                     <div class="col-lg-4 col-md-4">
                         <div class="service_details_left">
-                            <h3>Services</h3>
-                            <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="active" id="v-pills-tools-tab" data-toggle="pill" href="#v-pills-tools" role="tab" aria-controls="v-pills-tools" aria-selected="true">Hardware Equipment’s & Tools</a>
-                                <a class="" id="v-pills-electrical-tab" data-toggle="pill" href="#v-pills-electrical" role="tab" aria-controls="v-pills-electrical" aria-selected="false">Electrical</a>
-                                <a class="" id="v-pills-plumbing-tab" data-toggle="pill" href="#v-pills-plumbing" role="tab" aria-controls="v-pills-plumbing" aria-selected="false">Plumbing & Sanitation</a>
-                                <a class="" id="v-pills-pumps-tab" data-toggle="pill" href="#v-pills-pumps" role="tab" aria-controls="v-pills-pumps" aria-selected="false">Pumps</a>
-                                <a class="" id="v-pills-hvac-tab" data-toggle="pill" href="#v-pills-hvac" role="tab" aria-controls="v-pills-hvac" aria-selected="false">HVAC (Heating, Ventilating and Air Conditioning)</a>
-                                <a class="" id="v-pills-generators-tab" data-toggle="pill" href="#v-pills-generators" role="tab" aria-controls="v-pills-generators" aria-selected="false">Generators & Heavy Equipment’s</a>
-                                <a class="" id="v-pills-generators-tab" data-toggle="pill" href="#v-pills-generators" role="tab" aria-controls="v-pills-generators" aria-selected="false">Generators & Heavy Equipment’s</a>
-                                <a class="" id="v-pills-generators-tab" data-toggle="pill" href="#v-pills-generators" role="tab" aria-controls="v-pills-generators" aria-selected="false">Generators & Heavy Equipment’s</a>
-                                <a class="" id="v-pills-generators-tab" data-toggle="pill" href="#v-pills-generators" role="tab" aria-controls="v-pills-generators" aria-selected="false">Generators & Heavy Equipment’s</a>
+                            <h3>Brands</h3>
+                            <div class="nav nav-pills" id="v-pills-tab-brand" role="tablist" aria-orientation="vertical">
+                                <a class="active" id="v-pills-grainger-tab" data-toggle="pill" href="#v-pills-grainger" role="tab" aria-controls="v-pills-grainger" aria-selected="true">Grainger</a>
+                                <a class="" id="v-pills-milwaukee-tab" data-toggle="pill" href="#v-pills-milwaukee" role="tab" aria-controls="v-pills-milwaukee" aria-selected="false">Milwaukee</a>
+                                <a class="" id="v-pills-pelican-tab" data-toggle="pill" href="#v-pills-pelican" role="tab" aria-controls="v-pills-pelican" aria-selected="false">Pelican</a>
+                                <a class="" id="v-pills-dewalt-tab" data-toggle="pill" href="#v-pills-dewalt" role="tab" aria-controls="v-pills-dewalt" aria-selected="false">Dewalt</a>
+                                <a class="" id="v-pills-brady-tab" data-toggle="pill" href="#v-pills-brady" role="tab" aria-controls="v-pills-brady" aria-selected="false">Brady</a>
                             </div>
                         </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8">
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-tools" role="tabpanel" aria-labelledby="v-pills-tools-tab">
-                                    <div class="service_details_info">
-                                        <h3>Hardware Equipment’s & Tools</h3>
-                                        <p>Power tools, Welding machines, Air
-                                            compressor machines, Hand tools,
-                                            Diesel generators, High pressure
-                                            cleaners, Pneumatic tools, All types
-                                            of drills, Anchors, Industrial tools, All
-                                            types of blades, Grinders, Cordless
-                                            tools, Bolts & Nuts, Spare parts for
-                                            Generators, Air conditioning Spare
-                                            Parts, Saws, Hammers & Hoses,
-                                            Screws, Cargo ties, Paints & Paint
-                                            brushes, Adhesives & Tapes</p>
-                                    </div>
-                                    <div class="service_thumb">
-                                        <img class="img-fluid" src="img/service/service_details.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-electrical" role="tabpanel" aria-labelledby="v-pills-electrical-tab">
-                                    <div class="service_details_info">
-                                        <h3>Electrical</h3>
-                                        <p>Distribution panels, Breakers,
-                                            Cables & Wires, Conduit pipes,
-                                            Fittings, Lightings, Wiring
-                                            accessories, Fuses, Contactors,
-                                            Control relays, Cable glands &
-                                            Lugs, Isolators, Transformers,
-                                            Voltage regulators, Converters,
-                                            Fixtures, Lamps, Switches,
-                                            Switch sockets, Plugs and
-                                            sockets, Fans, Insect killers,
-                                            Pipe fittings, Enclosures &
-                                            Sockets </p>
-                                    </div>
-                                    <div class="service_thumb">
-                                        <img class="img-fluid" src="img/service/service_details.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-plumbing" role="tabpanel" aria-labelledby="v-pills-plumbing-tab">
-                                    <div class="service_details_info">
-                                        <h3>Plumbing & Sanitation</h3>
-                                        <p>PVC, CPVC & UPVC Pipes with various
-                                            sizes, Pressure Flow control valves,
-                                            Check Valves, Fitting Brushes, Basin
-                                            Wrenches, Relief Valves, Pipe Nipples &
-                                            Accessories, Cable Clamps, Hangers,
-                                            Unions, Pipe Flanges, Freezing Kits,
-                                            Repair Kits, Caddies, Heaters, Dies, Pipe
-                                            Threading, Accessories, Threaded Pipe
-                                            Sealants, Tapes, PVC, CPVC Fittings,
-                                            Couplings, Sinks, Sink Parts, Shower
-                                            Heads, Faucets, Wash Fountains, Toilet
-                                            Parts, Toilet Specialties, Bathroom
-                                            Accessories</p>
-                                    </div>
-                                    <div class="service_thumb">
-                                        <img class="img-fluid" src="img/service/service_details.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-pumps" role="tabpanel" aria-labelledby="v-pills-pumps-tab">
-                                    <div class="service_details_info">
-                                        <h3>Pumps</h3>
-                                        <p>Airlift Pump, Axial Flow Pump, Beam
-                                            Pump, Engine Driven Pump, Walking
-                                            Beam Pump, Centrifugal Pump, Chain
-                                            Pump, Circulator Pump, Concrete Pump,
-                                            Cyclic Pump, Diving Pump, Diaphragm
-                                            Pump, Fire Pump, Jockey Pump, Gear
-                                            Pump, Oil Pump, Peristaltic Pump, Roll
-                                            Pump, Treadle Pump, Turbo Pump,
-                                            Vacuum Pump, Wind Pump</p>
-                                    </div>
-                                    <div class="service_thumb">
-                                        <img class="img-fluid" src="img/service/service_details.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-hvac" role="tabpanel" aria-labelledby="v-pills-hvac-tab">
-                                    <div class="service_details_info">
-                                        <h3>HVAC (Heating, Ventilating and Air Conditioning)</h3>
-                                        <p>Air Conditioner, Air Filter, Boiler, Circulator
-                                            Pump, Cooling Tower, Chilled Beam,
-                                            Diffuser, Duct, Economizer, Evaporative
-                                            Cooler, Fan (Mechanical), Heat Exchanger,
-                                            Humidifier / Dehumidifier, Humidifier /
-                                            Dehumidifier, Heat Recovery Ventilator,
-                                            Heat Pump, HVAC Control System, Piping,
-                                            Unit Ventilator, Valve, Variable Frequency
-                                            Drive </p>
-                                    </div>
-                                    <div class="service_thumb">
-                                        <img class="img-fluid" src="img/service/hvac_details.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-generators" role="tabpanel" aria-labelledby="v-pills-generators-tab">
-                                    <div class="service_details_info">
-                                        <h3>Generators & Heavy Equipment’s</h3>
-                                        <p>Diesel Generators, Ground
-                                            Support Equipment’s, High &
-                                            Pressure Washers, High
-                                            Pressure Cleaners, Vacuums,
-                                            Spray-Extraction Cleaners, Air
-                                            Blower, Vehicle Cleaning
-                                            Systems, Industrial Cleaning
-                                            Systems, Forklifts, Light
-                                            Towers, Telescopic Handlers,
-                                            Crane</p>
-                                    </div>
-                                    <div class="service_thumb">
-                                        <img class="img-fluid" src="img/service/service_details.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="download_brochure d-flex align-items-center justify-content-between">
-                                    <div class="download_left d-flex align-items-center">
-                                        <div class="icon">
-                                            <img src="img/svg_icon/download.svg" alt="">
-                                        </div>
-                                        <div class="download_text">
-                                            <h3>Download Our Brochure</h3>
-                                            <p>Fully demonstrated pages along with images.</p>
-                                        </div>
-                                    </div>
-                                    <div class="download_right">
-                                        <a class="boxed-btn3-line" href="#">Download Now</a>
-                                    </div>
-                                </div>
+                    </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <!-- Grainger -->
+                        <div class="tab-pane fade show active" id="v-pills-grainger" role="tabpanel" aria-labelledby="v-pills-grainger-tab">
+                            <div class="service_details_info">
+                                <h3>Grainger</h3>
+                                <p>Grainger is a leader in industrial supplies, offering top-quality products for maintenance, repair, and operational needs. From safety gear to tools, Grainger ensures businesses run efficiently. Trusted by professionals for over 90 years, Grainger provides reliable solutions for every industry. Their vast inventory includes fasteners, adhesives, motors, and more. Choose Grainger for unparalleled service and high-performance industrial products.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/grainger_details.png" alt="Grainger">
                             </div>
                         </div>
+                        <!-- Milwaukee -->
+                        <div class="tab-pane fade" id="v-pills-milwaukee" role="tabpanel" aria-labelledby="v-pills-milwaukee-tab">
+                            <div class="service_details_info">
+                                <h3>Milwaukee</h3>
+                                <p>Milwaukee is synonymous with cutting-edge power tools and innovative hand tools built for professionals. Known for durability, Milwaukee products deliver unmatched performance in demanding environments. Explore cordless solutions, impact drivers, and saws designed to boost efficiency. Milwaukee's tools cater to construction, woodworking, and electrical applications. Trust Milwaukee for industry-leading tools that get the job done right.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/milwaukee_details.png" alt="Milwaukee">
+                            </div>
+                        </div>
+                        <!-- Pelican -->
+                        <div class="tab-pane fade" id="v-pills-pelican" role="tabpanel" aria-labelledby="v-pills-pelican-tab">
+                            <div class="service_details_info">
+                                <h3>Pelican</h3>
+                                <p>Pelican is the ultimate choice for rugged protective cases and advanced lighting systems. Their durable cases provide unmatched protection for gear, electronics, and sensitive equipment. Pelican's temperature-controlled containers ensure safe transport of critical items. Ideal for adventurers, military, and professionals, Pelican products are built to last. Choose Pelican for safety and reliability in extreme conditions.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/pelican_details.png" alt="Pelican">
+                            </div>
+                        </div>
+                        <!-- Dewalt -->
+                        <div class="tab-pane fade" id="v-pills-dewalt" role="tabpanel" aria-labelledby="v-pills-dewalt-tab">
+                            <div class="service_details_info">
+                                <h3>Dewalt</h3>
+                                <p>Dewalt is a powerhouse in high-performance power tools and hand tools tailored for professionals and DIYers. Renowned for cordless innovation, Dewalt's drills, saws, and grinders are industry staples. Their products combine power, durability, and precision for outstanding results. Whether on a construction site or in a workshop, Dewalt tools excel in all tasks. Experience superior quality with Dewalt's trusted brand legacy.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/dewalt_details.png" alt="Dewalt">
+                            </div>
+                        </div>
+                        <!-- Brady -->
+                        <div class="tab-pane fade" id="v-pills-brady" role="tabpanel" aria-labelledby="v-pills-brady-tab">
+                            <div class="service_details_info">
+                                <h3>Brady</h3>
+                                <p>Brady specializes in workplace safety and compliance with top-notch labeling and identification solutions. Their industrial printers and signs streamline operations and enhance efficiency. Brady’s labels ensure clear communication in hazardous environments, boosting safety. Trusted globally, Brady products are essential for workplace organization. Choose Brady for reliable, compliant, and efficient safety solutions.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/brady_details.png" alt="Brady">
+                            </div>
+                        </div>
+                        <!-- Brochure Download Section -->
+                        <div class="download_brochure d-flex align-items-center justify-content-between">
+                            <div class="download_left d-flex align-items-center">
+                                <div class="icon">
+                                    <img src="img/svg_icon/download.svg" alt="Download">
+                                </div>
+                                <div class="download_text">
+                                    <h3>Download Our Brochure</h3>
+                                    <p>Fully demonstrated pages along with images.</p>
+                                </div>
+                            </div>
+                            <div class="download_right">
+                                <a class="boxed-btn3-line" href="#">Download Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -278,7 +179,7 @@
                     <div class="Estimate_info">
                         <h3>Get a Quick Quote</h3>
                         <p>We're here to assist with any questions or needs you may have. Reach out and let us provide the support and information you're looking for.</p>
-                        <a href="#" class="boxed-btn3">+966 597745757</a>
+                        <a href="#" class="boxed-btn3">-NA-</a>
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-8 col-md-7">
@@ -353,7 +254,7 @@
                 <div class="col-xl-3 col-md-3">
                     <div class="single_location">
                         <h3> <img src="img/icon/support.svg" alt=""> Connect</h3>
-                        <p>Mob: +966 597745757<br>
+                        <p>Mob: -NA-<br>
                             Mail: info@ucscoksa.com <br>
                             Working hrs:  9am to 6pm</p>
                     </div>
@@ -406,7 +307,7 @@
                             </h3>
                             <ul>
                                 <li>Kingdom of Saudi Arabia</li>
-                                <li>Mob : +966 597745757</li>
+                                <li>Mob : -NA-</li>
                                 <li>Mon to Fri 9am to 6pm</li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
@@ -488,6 +389,39 @@
 
 
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Function to get URL parameters (e.g., ?brand=grainger)
+            function getUrlParameter(name) {
+                var urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(name);
+            }
+
+            // Function to update the active tab based on the 'brand' URL parameter
+            function setActiveBrandTab() {
+                var brand = getUrlParameter('brand');  // Get the 'brand' parameter from the URL
+
+                // Remove 'active' class from all the tabs in both left-side menu and content
+                $('#v-pills-tab-brand a').removeClass('active');
+                $('.tab-pane').removeClass('show active');
+
+                // If there's a 'brand' in the URL, find the matching tab in both areas and add 'active' class
+                if (brand) {
+                    var tabId = '#v-pills-' + brand.toLowerCase() + '-tab'; // For example, 'v-pills-grainger-tab'
+                    var contentId = '#v-pills-' + brand.toLowerCase(); // For example, 'v-pills-grainger'
+
+                    $(tabId).addClass('active'); // Highlight the left-side menu tab
+                    $(contentId).addClass('show active'); // Show the corresponding content in the right section
+                }
+            }
+
+            // Set active tab on page load based on the URL parameter
+            setActiveBrandTab();
+        });
+    </script>
+
 
     
 </body>

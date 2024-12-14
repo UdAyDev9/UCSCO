@@ -230,11 +230,11 @@ center: false,
     $(this).addClass('active');
     event.preventDefault();
 	});
-  
+
   // wow js
   new WOW().init();
 
-  // counter 
+  // counter
   $('.counter').counterUp({
     delay: 10,
     time: 10000
@@ -409,7 +409,7 @@ $(document).ready(function() {
 
 
 
-//------- Mailchimp js --------//  
+//------- Mailchimp js --------//
 function mailChimp() {
   $('#mc_embed_signup').find('form').ajaxChimp();
 }
@@ -436,8 +436,8 @@ mailChimp();
           $('select').niceSelect();
         });
 
-        // prise slider 
-        
+        // prise slider
+
 
 
 
@@ -452,11 +452,11 @@ mailChimp();
 document.addEventListener('DOMContentLoaded', () => {
         const slider = document.querySelector('.slider_bg');
         const images = [
-            'url(img/banner/slide_5.png)',
-            'url(img/banner/home_slider_2.png)',
+            'url(img/banner/home_slider_4.png)',
             'url(img/banner/home_slider_3.png)',
+             'url(img/banner/home_slider_2.png)',
             'url(img/banner/home_slider_1.jpeg)',
-            'url(img/banner/home_slider_4.jpg)'
+            'url(img/banner/home_slider_5.jpeg)'
         ]; // List all your images here
         let currentIndex = 0;
 
@@ -481,7 +481,7 @@ document.addEventListener('DOMContentLoaded', () => {
             changeBackground();
 
             // Start the background change interval
-            setInterval(changeBackground, 5000); // Change every 5 seconds
+            setInterval(changeBackground, 2000); // Change every 5 seconds
         }).catch(error => {
             console.error('Error preloading images:', error);
         });
@@ -523,3 +523,33 @@ document.addEventListener('DOMContentLoaded', () => {
  scrollToTopBtn.onclick = function() {
      window.scrollTo({ top: 0, behavior: "smooth" });
  };
+
+///*---------------------------------------------------------------Our Clients Starts-----------------------------------/*
+
+$(document).ready(function(){
+  $(".client_active").owlCarousel({
+    items: 5,               // Show 5 items at once
+    loop: true,             // Infinite loop
+    margin: 10,             // Margin between items
+    autoplay: true,         // Auto scroll
+    autoplayTimeout: 2000,  // Auto scroll interval
+    autoplayHoverPause: true, // Pause on hover
+    responsive: {
+      0: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      1024: {
+        items: 4
+      },
+      1200: {
+        items: 5
+      }
+    }
+  });
+});
+
+
+///*---------------------------------------------------------------Our Clients Ends-----------------------------------/*

@@ -1,31 +1,34 @@
-    // -------   Mail Send ajax
+$(document).ready(function() {
+    var form = $('#myForm'); // Contact form
+    var submit = $('.submit-btn'); // Submit button
+    var alert = $('.alert-msg'); // Alert div for showing alert messages
 
-     $(document).ready(function() {
-        var form = $('#myForm'); // contact form
-        var submit = $('.submit-btn'); // submit button
-        var alert = $('.alert-msg'); // alert div for show alert message
+    // Form submit event
+    form.on('submit', function(e) {
+        e.preventDefault(); // Prevent default form submission
 
-        // form submit event
-        form.on('submit', function(e) {
-            e.preventDefault(); // prevent default form submit
-
-            $.ajax({
-                url: 'mail.php', // form action url
-                type: 'POST', // form submit method get/post
-                dataType: 'html', // request type html/json/xml
-                data: form.serialize(), // serialize form data
-                beforeSend: function() {
-                    alert.fadeOut();
-                    submit.html('Sending....'); // change submit button text
-                },
-                success: function(data) {
-                    alert.html(data).fadeIn(); // fade in response data
-                    form.trigger('reset'); // reset form
-                    submit.attr("style", "display: none !important");; // reset submit button text
-                },
-                error: function(e) {
-                    console.log(e)
-                }
-            });
+        $.ajax({
+            url: 'mail.php', // Form action URL
+            type: 'POST', // Form submission method (GET/POST)
+            dataType: 'html', // Request type (html/json/xml)
+            data: form.serialize(), // Serialize form data
+            beforeSend: function() {
+                alert.fadeOut(); // Hide alert message
+                submit.html('Sending...'); // Change submit button text
+                submit.prop('disabled', true); // Disable button to prevent multiple clicks
+            },
+            success: function(data) {
+                alert.html(data).fadeIn(); // Show response data
+                form.trigger('reset'); // Reset the form
+                submit.html('Send'); // Reset button text
+                submit.prop('disabled', false); // Re-enable the button
+            },
+            error: function(xhr, status, error) {
+                console.error('AJAX Error:', error); // Log error to console
+                alert.html('<p class="error">Something went wrong. Please try again.</p>').fadeIn();
+                submit.html('Send'); // Reset button text
+                submit.prop('disabled', false); // Re-enable the button
+            }
         });
     });
+});

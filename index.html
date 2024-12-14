@@ -16,6 +16,11 @@
     <link rel="shortcut icon" href="img/fav_icon.png" type="image/x-icon"/>
     <link rel="apple-touch-icon" href="img/fav_icon.png"/>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -57,22 +62,40 @@
             <li class="uk-menu-item"><a href="index.html">Home</a></li>
             <li class="uk-menu-item"><a href="about.html">About</a></li>
             <li class="uk-menu-item uk-has-submenu">
-                <a href="our_brands.html">Our Brands</a>
+                <a href="our_brands.html" onclick="return false;">Our Brands</a>
                 <ul class="uk-submenu">
-                    <li class="uk-submenu-item"><a href="brand_details.html?brand=brand1">Brand
-                        1</a></li>
-                    <li class="uk-submenu-item"><a href="brand_details.html?brand=brand2">Brand
-                        2</a></li>
-                    <li class="uk-submenu-item"><a href="brand_details.html?brand=brand3">Brand New
-                        Brand 3</a></li>
+                    <li class="uk-submenu-item"><a href="brand_details.html?brand=grainger">Grainger</a></li>
+                    <li class="uk-submenu-item"><a href="brand_details.html?brand=milwaukee">Milwaukee</a></li>
+                    <li class="uk-submenu-item"><a href="brand_details.html?brand=pelican">Pelican</a></li>
+                    <li class="uk-submenu-item"><a href="brand_details.html?brand=dewalt">Dewalt</a></li>
+                    <li class="uk-submenu-item"><a href="brand_details.html?brand=brady">Brady</a></li>
                 </ul>
             </li>
-            <li class="uk-menu-item"><a href="our_supplies.html">Our Supplies</a></li>
+            <li class="uk-menu-item uk-has-submenu">
+                <a href="our_supplies.html" onclick="return false;">Our Supplies</a>
+                <ul class="uk-submenu-long">
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=tools">Hardware Equipment’s & Tools</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=electrical">Electrical</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=plumbing">Plumbing & Sanitation</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=pumps">Pumps</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=furniture">Furniture and Fixtures</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=office">Office Supplies & Stationery</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=electronics">Electronics & Appliances</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=it">IT & Communications</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=strainers">Strainers & Filters</a></li>
+
+                    <!--<li class="uk-submenu-item"><a href="#v-pills-safety">Safety & Security</a></li>
+                    <li class="uk-submenu-item"><a href="#v-pills-janitorial">Janitorial Supplies & Cleaning Products</a></li>
+                    <li class="uk-submenu-item"><a href="#v-pills-oil">Oil and Lubricants</a></li>
+                    <li class="uk-submenu-item"><a href="#v-pills-hvac">HVAC (Heating, Ventilating and Air Conditioning)</a></li>-->
+                </ul>
+            </li>
             <li class="uk-menu-item"><a href="our_services.html">Our Services</a></li>
             <li class="uk-menu-item"><a href="gallery.html">Our Showroom</a></li>
             <li class="uk-menu-item"><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
+
 </header>
 
 <!-- header-end -->
@@ -262,7 +285,7 @@
             <div class="row  align-items-center">
                 <div class="col-xl-5 col-lg-5 col-md-6">
                     <div class="about_image">
-                        <img src="img/about/about_us_portait.jpeg" alt="">
+                        <img src="img/about/about_us_portrait.jpeg" alt="">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6">
@@ -379,6 +402,88 @@
     </div>
 </div>
 
+<!-----Our Clients---->
+<!--<div class="service_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title mb-50 text-center">
+                    <h3>
+                        Our Clients
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="service_active owl-carousel">
+                            <img src="img/clinets/client_1.png" alt="">
+                </div>
+                <div class="service_active owl-carousel">
+                            <img src="img/clinets/client_2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!-- Client Section Start -->
+<div class="uk_client_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title mb-50 text-center">
+                    <h3>Our Clients</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="client_active owl-carousel">
+                    <div class="single_uk_client">
+                        <div class="thumb">
+                            <img src="img/clients/client_1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="single_uk_client">
+                        <div class="thumb">
+                            <img src="img/clients/client_2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="single_uk_client">
+                        <div class="thumb">
+                            <img src="img/clients/client_3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="single_uk_client">
+                        <div class="thumb">
+                            <img src="img/clients/client_4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="single_uk_client">
+                        <div class="thumb">
+                            <img src="img/clients/client_5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="single_uk_client">
+                        <div class="thumb">
+                            <img src="img/clients/client_4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="single_uk_client">
+                        <div class="thumb">
+                            <img src="img/clients/client_3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Client Section End -->
+
 
 <!-- Estimate_area start  -->
 <div class="Estimate_area overlay">
@@ -389,39 +494,36 @@
                     <h3>Get a Quick Quote</h3>
                     <p>We're here to assist with any questions or needs you may have. Reach out and
                         let us provide the support and information you're looking for.</p>
-                    <a href="#" class="boxed-btn3">+966 597745757</a>
+                    <a href="#" class="boxed-btn3">-NA-</a>
                 </div>
             </div>
             <div class="col-xl-8 col-lg-8 col-md-7">
                 <div class="form">
-                    <form action="#">
+                    <form action="mail.php" method="post">
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="input_field">
-                                    <input type="text" placeholder="Your Full Name">
+                                    <input type="text" name="name" placeholder="Your Full Name" required>
                                 </div>
                             </div>
-
                             <div class="col-xl-6">
                                 <div class="input_field">
-                                    <input type="email" placeholder="Your Email Id">
+                                    <input type="email" name="email" placeholder="Your Email Id" required>
                                 </div>
                             </div>
-
                             <div class="col-xl-6">
                                 <div class="input_field">
-                                    <input type="number" placeholder="Mobile Number">
+                                    <input type="number" name="number" placeholder="Mobile Number" required>
                                 </div>
                             </div>
-
                             <div class="col-xl-6">
                                 <div class="input_field">
-                                    <input type="text" placeholder="Subject">
+                                    <input type="text" name="subject" placeholder="Subject" required>
                                 </div>
                             </div>
                             <div class="col-xl-12">
                                 <div class="input_field">
-                                    <textarea placeholder="Details"></textarea>
+                                    <textarea name="message" placeholder="Details" required></textarea>
                                 </div>
                             </div>
                             <div class="col-xl-12">

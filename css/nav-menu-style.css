@@ -16,6 +16,7 @@
     --font-family: 'Poppins', Arial; /* Default font family */
     --text-padding: 10px 13px; /* Padding for text items */
     --submenu-width: 200px; /* Minimum width for submenu */
+    --submenu-width-long: 300px; /* Minimum width for submenu for long items supplies and services */
     --main-item-color: #333; /* Color for main menu items */
     --main-item-hover-color: var(--primary-color); /* Hover color for main menu items */
     --mobile-menu-bg: #f7f7f7; /* Mobile menu background color */
@@ -173,4 +174,97 @@ body {
 .uk-menu-item.active a {
     color: var(--nav-hover-text-color);
     background-color: var(--nav-hover-bg-color);
+}
+
+
+/* Ensure border-radius is applied to the last submenu item */
+.uk-submenu li:last-child a {
+    border-bottom-left-radius: var(--submenu-border-radius);
+    border-bottom-right-radius: var(--submenu-border-radius);
+}
+
+/* Reset border-radius when not hovered */
+.uk-submenu li:not(:last-child) a {
+    border-radius: 0;
+}
+
+
+/*-------------For Long Supplies and Services--------------*/
+/* Submenu Styles */
+.uk-submenu-long {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--submenu-bg-color);
+    border-radius: var(--submenu-border-radius);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: var(--submenu-width-long);
+    z-index: 100;
+}
+
+/* Show submenu on hover */
+.uk-has-submenu:hover .uk-submenu-long {
+    display: flex;
+    animation: fadeIn var(--transition-speed) ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .uk-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .uk-menu {
+        flex-direction: column;
+        gap: 10px;
+        background-color: var(--mobile-menu-bg);
+        width: 100%;
+    }
+
+    .uk-menu-item a {
+        color: var(--mobile-menu-text-color);
+        text-align: left;
+    }
+
+    .uk-submenu-long {
+        position: relative;
+        box-shadow: none;
+    }
+}
+
+/* Add styles for active menu item */
+.uk-menu-item.active a {
+    color: var(--nav-hover-text-color);
+    background-color: var(--nav-hover-bg-color);
+}
+
+
+/* Ensure border-radius is applied to the last submenu item */
+.uk-submenu-long li:last-child a {
+    border-bottom-left-radius: var(--submenu-border-radius);
+    border-bottom-right-radius: var(--submenu-border-radius);
+}
+
+/* Reset border-radius when not hovered */
+.uk-submenu-long li:not(:last-child) a {
+    border-radius: 0;
 }

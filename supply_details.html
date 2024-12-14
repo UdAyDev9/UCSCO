@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-menu-style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -34,70 +35,34 @@
 
 
     <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div class="header-top_area d-none d-lg-block">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-4 col-lg-4">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo_ucsco_transparent.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-md-8">
-                            <div class="header_right d-flex align-items-center">
-                                <div class="short_contact_list">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-envelope"></i> info@ucscoksa.com</a></li>
-                                        <li><a href="#"> <i class="fa fa-phone"></i> +966 597745757</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="book_btn d-none d-lg-block">
-                                                                        <a class="boxed-btn3-line" href="contact.html">Get Free Quote</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="sticky-header" class="main-header-area">
-                <div class="container">
-                    <div class="header_bottom_border">
-                        <div class="row align-items-center">
-                            <div class="col-12 d-block d-lg-none">
-                                <div class="logo">
-                                    <a href="index.html">
-                                        <img src="img/logo_ucsco_transparent.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xl-9 col-lg-9">
-                                <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a  href="index.html">home</a></li>
-                                            <li><a  href="our_supplies.html">Products</a></li>
-                                            <li><a  href="service_details.html">Product Details</a></li>
-                                            <li><a href="About.html">about</a></li>
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+    <header class="uk-navbar">
+        <div class="uk-logo">
+            <img src="img/full_logo_hd_new.png" alt="Logo">
         </div>
+        <!-- <div class="uk-logo-name">
+             <img src="img/logo_name.png" alt="Logo Name">
+         </div>-->
+        <nav class="uk-nav-links">
+            <ul class="uk-menu">
+                <li class="uk-menu-item"><a href="index.html">Home</a></li>
+                <li class="uk-menu-item"><a href="about.html">About</a></li>
+                <li class="uk-menu-item uk-has-submenu">
+                    <a href="our_brands.html">Our Brands</a>
+                    <ul class="uk-submenu">
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=brand1">Brand
+                            1</a></li>
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=brand2">Brand
+                            2</a></li>
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=brand3">Brand New
+                            Brand 3</a></li>
+                    </ul>
+                </li>
+                <li class="uk-menu-item"><a href="our_supplies.html">Our Supplies</a></li>
+                <li class="uk-menu-item"><a href="our_services.html">Our Services</a></li>
+                <li class="uk-menu-item"><a href="gallery.html">Our Showroom</a></li>
+                <li class="uk-menu-item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- header-end -->
 
@@ -119,153 +84,175 @@
     <div class="service_details_area">
         <div class="container">
             <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                        <div class="service_details_left">
-                            <h3>Services</h3>
-                            <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="active" id="v-pills-tools-tab" data-toggle="pill" href="#v-pills-tools" role="tab" aria-controls="v-pills-tools" aria-selected="true">Hardware Equipment’s & Tools</a>
-                                <a class="" id="v-pills-electrical-tab" data-toggle="pill" href="#v-pills-electrical" role="tab" aria-controls="v-pills-electrical" aria-selected="false">Electrical</a>
-                                <a class="" id="v-pills-plumbing-tab" data-toggle="pill" href="#v-pills-plumbing" role="tab" aria-controls="v-pills-plumbing" aria-selected="false">Plumbing & Sanitation</a>
-                                <a class="" id="v-pills-pumps-tab" data-toggle="pill" href="#v-pills-pumps" role="tab" aria-controls="v-pills-pumps" aria-selected="false">Pumps</a>
-                                <a class="" id="v-pills-hvac-tab" data-toggle="pill" href="#v-pills-hvac" role="tab" aria-controls="v-pills-hvac" aria-selected="false">HVAC (Heating, Ventilating and Air Conditioning)</a>
-                                <a class="" id="v-pills-generators-tab" data-toggle="pill" href="#v-pills-generators" role="tab" aria-controls="v-pills-generators" aria-selected="false">Generators & Heavy Equipment’s</a>
-                                <a class="" id="v-pills-generators-tab" data-toggle="pill" href="#v-pills-generators" role="tab" aria-controls="v-pills-generators" aria-selected="false">Generators & Heavy Equipment’s</a>
-                                <a class="" id="v-pills-generators-tab" data-toggle="pill" href="#v-pills-generators" role="tab" aria-controls="v-pills-generators" aria-selected="false">Generators & Heavy Equipment’s</a>
-                                <a class="" id="v-pills-generators-tab" data-toggle="pill" href="#v-pills-generators" role="tab" aria-controls="v-pills-generators" aria-selected="false">Generators & Heavy Equipment’s</a>
+                <div class="col-lg-4 col-md-4">
+                    <div class="service_details_left">
+                        <h3>Supplies</h3>
+                        <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="active" id="v-pills-tools-tab" data-toggle="pill" href="#v-pills-tools" role="tab" aria-controls="v-pills-tools" aria-selected="true">Hardware Equipment’s & Tools</a>
+                            <a class="" id="v-pills-electrical-tab" data-toggle="pill" href="#v-pills-electrical" role="tab" aria-controls="v-pills-electrical" aria-selected="false">Electrical</a>
+                            <a class="" id="v-pills-plumbing-tab" data-toggle="pill" href="#v-pills-plumbing" role="tab" aria-controls="v-pills-plumbing" aria-selected="false">Plumbing & Sanitation</a>
+                            <a class="" id="v-pills-pumps-tab" data-toggle="pill" href="#v-pills-pumps" role="tab" aria-controls="v-pills-pumps" aria-selected="false">Pumps</a>
+                            <a class="" id="v-pills-hvac-tab" data-toggle="pill" href="#v-pills-hvac" role="tab" aria-controls="v-pills-hvac" aria-selected="false">HVAC (Heating, Ventilating and Air Conditioning)</a>
+                            <a class="" id="v-pills-furniture-tab" data-toggle="pill" href="#v-pills-furniture" role="tab" aria-controls="v-pills-furniture" aria-selected="false">Furniture and Fixtures</a>
+                            <a class="" id="v-pills-office-tab" data-toggle="pill" href="#v-pills-office" role="tab" aria-controls="v-pills-office" aria-selected="false">Office Supplies & Stationery</a>
+                            <a class="" id="v-pills-electronics-tab" data-toggle="pill" href="#v-pills-electronics" role="tab" aria-controls="v-pills-electronics" aria-selected="false">Electronics & Appliances</a>
+                            <a class="" id="v-pills-it-tab" data-toggle="pill" href="#v-pills-it" role="tab" aria-controls="v-pills-it" aria-selected="false">IT & Communications</a>
+                            <a class="" id="v-pills-strainers-tab" data-toggle="pill" href="#v-pills-strainers" role="tab" aria-controls="v-pills-strainers" aria-selected="false">Strainers & Filters</a>
+                            <a class="" id="v-pills-safety-tab" data-toggle="pill" href="#v-pills-safety" role="tab" aria-controls="v-pills-safety" aria-selected="false">Safety & Security</a>
+                            <a class="" id="v-pills-janitorial-tab" data-toggle="pill" href="#v-pills-janitorial" role="tab" aria-controls="v-pills-janitorial" aria-selected="false">Janitorial Supplies & Cleaning Products</a>
+                            <a class="" id="v-pills-oil-tab" data-toggle="pill" href="#v-pills-oil" role="tab" aria-controls="v-pills-oil" aria-selected="false">Oil and Lubricants</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-tools" role="tabpanel" aria-labelledby="v-pills-tools-tab">
+                            <div class="service_details_info">
+                                <h3>Hardware Equipment’s & Tools</h3>
+                                <p>Power tools, Welding machines, Air compressor machines, Hand tools, Diesel generators, High-pressure cleaners, Pneumatic tools, Drills, Anchors, Industrial tools, Blades, Grinders, Cordless tools, Bolts & Nuts, Spare parts for generators, Saws, Hammers & Hoses, Screws, Cargo ties, Paints & Paint brushes, Adhesives & Tapes.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/service_details.png" alt="">
                             </div>
                         </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8">
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-tools" role="tabpanel" aria-labelledby="v-pills-tools-tab">
-                                    <div class="service_details_info">
-                                        <h3>Hardware Equipment’s & Tools</h3>
-                                        <p>Power tools, Welding machines, Air
-                                            compressor machines, Hand tools,
-                                            Diesel generators, High pressure
-                                            cleaners, Pneumatic tools, All types
-                                            of drills, Anchors, Industrial tools, All
-                                            types of blades, Grinders, Cordless
-                                            tools, Bolts & Nuts, Spare parts for
-                                            Generators, Air conditioning Spare
-                                            Parts, Saws, Hammers & Hoses,
-                                            Screws, Cargo ties, Paints & Paint
-                                            brushes, Adhesives & Tapes</p>
-                                    </div>
-                                    <div class="service_thumb">
-                                        <img class="img-fluid" src="img/service/service_details.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-electrical" role="tabpanel" aria-labelledby="v-pills-electrical-tab">
-                                    <div class="service_details_info">
-                                        <h3>Electrical</h3>
-                                        <p>Distribution panels, Breakers,
-                                            Cables & Wires, Conduit pipes,
-                                            Fittings, Lightings, Wiring
-                                            accessories, Fuses, Contactors,
-                                            Control relays, Cable glands &
-                                            Lugs, Isolators, Transformers,
-                                            Voltage regulators, Converters,
-                                            Fixtures, Lamps, Switches,
-                                            Switch sockets, Plugs and
-                                            sockets, Fans, Insect killers,
-                                            Pipe fittings, Enclosures &
-                                            Sockets </p>
-                                    </div>
-                                    <div class="service_thumb">
-                                        <img class="img-fluid" src="img/service/service_details.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-plumbing" role="tabpanel" aria-labelledby="v-pills-plumbing-tab">
-                                    <div class="service_details_info">
-                                        <h3>Plumbing & Sanitation</h3>
-                                        <p>PVC, CPVC & UPVC Pipes with various
-                                            sizes, Pressure Flow control valves,
-                                            Check Valves, Fitting Brushes, Basin
-                                            Wrenches, Relief Valves, Pipe Nipples &
-                                            Accessories, Cable Clamps, Hangers,
-                                            Unions, Pipe Flanges, Freezing Kits,
-                                            Repair Kits, Caddies, Heaters, Dies, Pipe
-                                            Threading, Accessories, Threaded Pipe
-                                            Sealants, Tapes, PVC, CPVC Fittings,
-                                            Couplings, Sinks, Sink Parts, Shower
-                                            Heads, Faucets, Wash Fountains, Toilet
-                                            Parts, Toilet Specialties, Bathroom
-                                            Accessories</p>
-                                    </div>
-                                    <div class="service_thumb">
-                                        <img class="img-fluid" src="img/service/service_details.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-pumps" role="tabpanel" aria-labelledby="v-pills-pumps-tab">
-                                    <div class="service_details_info">
-                                        <h3>Pumps</h3>
-                                        <p>Airlift Pump, Axial Flow Pump, Beam
-                                            Pump, Engine Driven Pump, Walking
-                                            Beam Pump, Centrifugal Pump, Chain
-                                            Pump, Circulator Pump, Concrete Pump,
-                                            Cyclic Pump, Diving Pump, Diaphragm
-                                            Pump, Fire Pump, Jockey Pump, Gear
-                                            Pump, Oil Pump, Peristaltic Pump, Roll
-                                            Pump, Treadle Pump, Turbo Pump,
-                                            Vacuum Pump, Wind Pump</p>
-                                    </div>
-                                    <div class="service_thumb">
-                                        <img class="img-fluid" src="img/service/service_details.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-hvac" role="tabpanel" aria-labelledby="v-pills-hvac-tab">
-                                    <div class="service_details_info">
-                                        <h3>HVAC (Heating, Ventilating and Air Conditioning)</h3>
-                                        <p>Air Conditioner, Air Filter, Boiler, Circulator
-                                            Pump, Cooling Tower, Chilled Beam,
-                                            Diffuser, Duct, Economizer, Evaporative
-                                            Cooler, Fan (Mechanical), Heat Exchanger,
-                                            Humidifier / Dehumidifier, Humidifier /
-                                            Dehumidifier, Heat Recovery Ventilator,
-                                            Heat Pump, HVAC Control System, Piping,
-                                            Unit Ventilator, Valve, Variable Frequency
-                                            Drive </p>
-                                    </div>
-                                    <div class="service_thumb">
-                                        <img class="img-fluid" src="img/service/hvac_details.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-generators" role="tabpanel" aria-labelledby="v-pills-generators-tab">
-                                    <div class="service_details_info">
-                                        <h3>Generators & Heavy Equipment’s</h3>
-                                        <p>Diesel Generators, Ground
-                                            Support Equipment’s, High &
-                                            Pressure Washers, High
-                                            Pressure Cleaners, Vacuums,
-                                            Spray-Extraction Cleaners, Air
-                                            Blower, Vehicle Cleaning
-                                            Systems, Industrial Cleaning
-                                            Systems, Forklifts, Light
-                                            Towers, Telescopic Handlers,
-                                            Crane</p>
-                                    </div>
-                                    <div class="service_thumb">
-                                        <img class="img-fluid" src="img/service/service_details.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="download_brochure d-flex align-items-center justify-content-between">
-                                    <div class="download_left d-flex align-items-center">
-                                        <div class="icon">
-                                            <img src="img/svg_icon/download.svg" alt="">
-                                        </div>
-                                        <div class="download_text">
-                                            <h3>Download Our Brochure</h3>
-                                            <p>Fully demonstrated pages along with images.</p>
-                                        </div>
-                                    </div>
-                                    <div class="download_right">
-                                        <a class="boxed-btn3-line" href="#">Download Now</a>
-                                    </div>
-                                </div>
+                        <div class="tab-pane fade" id="v-pills-electrical" role="tabpanel" aria-labelledby="v-pills-electrical-tab">
+                            <div class="service_details_info">
+                                <h3>Electrical</h3>
+                                <p>Distribution panels, Breakers, Cables & Wires, Conduit pipes, Fittings, Lighting, Wiring accessories, Fuses, Contactors, Relays, Transformers, Voltage regulators, Converters, Fixtures, Lamps, Switches, Plugs, Fans, Enclosures, Sockets.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/service_details.png" alt="">
                             </div>
                         </div>
+                        <div class="tab-pane fade" id="v-pills-plumbing" role="tabpanel" aria-labelledby="v-pills-plumbing-tab">
+                            <div class="service_details_info">
+                                <h3>Plumbing & Sanitation</h3>
+                                <p>PVC, CPVC & UPVC Pipes, Valves, Fitting Brushes, Pipe Nipples, Cable Clamps, Unions, Pipe Flanges, Heaters, Dies, Threaded Pipe Sealants, Tapes, Fittings, Sinks, Shower Heads, Faucets, Bathroom Accessories.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/service_details.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-pumps" role="tabpanel" aria-labelledby="v-pills-pumps">
+                            <div class="service_details_info">
+                                <h3>Pumps</h3>
+                                <p>Airlift Pump, Axial Flow Pump, Beam
+                                    Pump, Engine Driven Pump, Walking
+                                    Beam Pump, Centrifugal Pump, Chain
+                                    Pump, Circulator Pump, Concrete Pump,
+                                    Cyclic Pump, Diving Pump, Diaphragm
+                                    Pump, Fire Pump, Jockey Pump, Gear
+                                    Pump, Oil Pump, Peristaltic Pump, Roll
+                                    Pump, Treadle Pump, Turbo Pump,
+                                    Vacuum Pump, Wind Pump</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/service_details.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-hvac" role="tabpanel" aria-labelledby="v-pills-hvac">
+                            <div class="service_details_info">
+                                <h3>HVAC (Heating, Ventilating and Air Conditioning)</h3>
+                                <p>Air Conditioner, Air Filter, Boiler, Circulator
+                                    Pump, Cooling Tower, Chilled Beam,
+                                    Diffuser, Duct, Economizer, Evaporative
+                                    Cooler, Fan (Mechanical), Heat Exchanger,
+                                    Humidifier / Dehumidifier, Humidifier /
+                                    Dehumidifier, Heat Recovery Ventilator,
+                                    Heat Pump, HVAC Control System, Piping,
+                                    Unit Ventilator, Valve, Variable Frequency
+                                    Drive</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/service_details.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-furniture" role="tabpanel" aria-labelledby="v-pills-furniture-tab">
+                            <div class="service_details_info">
+                                <h3>Furniture and Fixtures</h3>
+                                <p>Office desks, Chairs, Workstations, Storage cabinets, Shelving units, Reception furniture, Meeting tables,
+                                    Filing systems, Modular furniture, Ergonomic seating, Bookcases, Partitions, Accessories for furniture assembly.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/furniture_details.png" alt="Furniture and Fixtures">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-office" role="tabpanel" aria-labelledby="v-pills-office-tab">
+                            <div class="service_details_info">
+                                <h3>Office Supplies & Stationery</h3>
+                                <p>Notebooks, Pens, Filing products, Paper shredders, Desktop organizers, Staplers, Clipboards, Calculators,
+                                    Office adhesives, Scissors, Binding machines, Conference supplies, ID card printers, Name badges.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/office_details.png" alt="Office Supplies & Stationery">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-electronics" role="tabpanel" aria-labelledby="v-pills-electronics-tab">
+                            <div class="service_details_info">
+                                <h3>Electronics & Appliances</h3>
+                                <p>Microwaves, Refrigerators, Air conditioners, TVs, Home theaters, Laptops, Mobile phones, Tablets, Printers,
+                                    Kitchen appliances, Home automation devices, Washing machines, Speakers, Monitors.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/electronics_details.png" alt="Electronics & Appliances">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-it" role="tabpanel" aria-labelledby="v-pills-it-tab">
+                            <div class="service_details_info">
+                                <h3>IT & Communications</h3>
+                                <p>Routers, Switches, Servers, Network cables, Cloud solutions, Data storage devices, Security systems, IP phones,
+                                    Video conferencing equipment, Modems, Firewalls, Wireless access points, Collaboration tools.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/it_details.png" alt="IT & Communications">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-strainers" role="tabpanel" aria-labelledby="v-pills-strainers-tab">
+                            <div class="service_details_info">
+                                <h3>Strainers & Filters</h3>
+                                <p>Basket strainers, Y strainers, Duplex filters, Bag filters, Cartridge filters, Oil strainers, Gas filters,
+                                    Liquid strainers, Mesh filters, Industrial filtration systems, Water filtration systems, Replacement parts.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/strainers_details.png" alt="Strainers & Filters">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-safety" role="tabpanel" aria-labelledby="v-pills-safety-tab">
+                            <div class="service_details_info">
+                                <h3>Safety & Security</h3>
+                                <p>Fire extinguishers, Helmets, Safety goggles, Protective clothing, Safety signs, CCTV cameras, Alarm systems,
+                                    Access control systems, Emergency lighting, Fire alarms, Lockout devices, Safety harnesses.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/safety_details.png" alt="Safety & Security">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-janitorial" role="tabpanel" aria-labelledby="v-pills-janitorial-tab">
+                            <div class="service_details_info">
+                                <h3>Janitorial Supplies & Cleaning Products</h3>
+                                <p>Floor cleaners, Dustbins, Mops, Cleaning brushes, Disinfectants, Hand sanitizers, Paper towels, Vacuum cleaners,
+                                    Window cleaning tools, Scrubbers, Polishing equipment, Trash bags, Odor control products.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/janitorial_details.png" alt="Janitorial Supplies & Cleaning Products">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-oil" role="tabpanel" aria-labelledby="v-pills-oil-tab">
+                            <div class="service_details_info">
+                                <h3>Oil and Lubricants</h3>
+                                <p>Engine oils, Hydraulic oils, Gear oils, Synthetic lubricants, Greases, Industrial oils, Compressor oils,
+                                    Cutting fluids, Rust preventatives, Food-grade lubricants, Biodegradable oils, Additives, Sealants.</p>
+                            </div>
+                            <div class="service_thumb">
+                                <img class="img-fluid" src="img/service/oil_details.png" alt="Oil and Lubricants">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
     <!-- service_details_start  -->
@@ -278,7 +265,7 @@
                     <div class="Estimate_info">
                         <h3>Get a Quick Quote</h3>
                         <p>We're here to assist with any questions or needs you may have. Reach out and let us provide the support and information you're looking for.</p>
-                        <a href="#" class="boxed-btn3">+966 597745757</a>
+                        <a href="#" class="boxed-btn3">-NA-</a>
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-8 col-md-7">
@@ -353,7 +340,7 @@
                 <div class="col-xl-3 col-md-3">
                     <div class="single_location">
                         <h3> <img src="img/icon/support.svg" alt=""> Connect</h3>
-                        <p>Mob: +966 597745757<br>
+                        <p>Mob: -NA-<br>
                             Mail: info@ucscoksa.com <br>
                             Working hrs:  9am to 6pm</p>
                     </div>
@@ -406,7 +393,7 @@
                             </h3>
                             <ul>
                                 <li>Kingdom of Saudi Arabia</li>
-                                <li>Mob : +966 597745757</li>
+                                <li>Mob : -NA-</li>
                                 <li>Mon to Fri 9am to 6pm</li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
@@ -488,8 +475,40 @@
 
 
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    
+
+    <script>
+        $(document).ready(function () {
+            // Function to get URL parameters (e.g., ?supply=tools)
+            function getUrlParameter(name) {
+                var urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(name);
+            }
+
+            // Function to update the active tab based on the 'supply' URL parameter
+            function setActiveSupplyTab() {
+                var supply = getUrlParameter('supply'); // Get the 'supply' parameter from the URL
+
+                // Remove 'active' class from all the tabs in both left-side menu and content
+                $('#v-pills-tab a').removeClass('active');
+                $('.tab-pane').removeClass('show active');
+
+                // If there's a 'supply' in the URL, find the matching tab and content
+                if (supply) {
+                    var supplyTabId = '#v-pills-' + supply.toLowerCase() + '-tab'; // Example: '#v-pills-tools-tab'
+                    var supplyContentId = '#v-pills-' + supply.toLowerCase(); // Example: '#v-pills-tools'
+
+                    $(supplyTabId).addClass('active'); // Highlight the left-side menu tab
+                    $(supplyContentId).addClass('show active'); // Show the corresponding content in the right section
+                }
+            }
+
+            // Set active tab on page load based on the URL parameter
+            setActiveSupplyTab();
+        });
+    </script>
+
 </body>
 
 </html>
