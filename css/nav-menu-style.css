@@ -11,7 +11,7 @@
     --submenu-hover-text-color: white; /* Hover text color for submenu */
     --submenu-border-color: rgba(0, 0, 0, 0.1); /* Submenu border or shadow color */
     --shadow-color: rgba(0, 0, 0, 0.1); /* Shadow color for elements */
-    --transition-speed: 0.3s; /* Speed for transitions and animations */
+    --transition-speed: 0.5s; /* Speed for transitions and animations */
     --submenu-border-radius: 5px; /* Border radius for submenus */
     --font-family: 'Poppins', Arial; /* Default font family */
     --text-padding: 10px 13px; /* Padding for text items */
@@ -124,6 +124,7 @@ body {
     list-style: none;
     min-width: var(--submenu-width);
     z-index: 100;
+
 }
 
 /* Show submenu on hover */

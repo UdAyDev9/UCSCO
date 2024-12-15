@@ -74,11 +74,11 @@
             <li class="uk-menu-item uk-has-submenu">
                 <a href="our_supplies.html" onclick="return false;">Our Supplies</a>
                 <ul class="uk-submenu-long">
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=furniture">Furniture and Fixtures</a></li>
                     <li class="uk-submenu-item"><a href="supply_details.html?supply=tools">Hardware Equipment’s & Tools</a></li>
                     <li class="uk-submenu-item"><a href="supply_details.html?supply=electrical">Electrical</a></li>
                     <li class="uk-submenu-item"><a href="supply_details.html?supply=plumbing">Plumbing & Sanitation</a></li>
                     <li class="uk-submenu-item"><a href="supply_details.html?supply=pumps">Pumps</a></li>
-                    <li class="uk-submenu-item"><a href="supply_details.html?supply=furniture">Furniture and Fixtures</a></li>
                     <li class="uk-submenu-item"><a href="supply_details.html?supply=office">Office Supplies & Stationery</a></li>
                     <li class="uk-submenu-item"><a href="supply_details.html?supply=electronics">Electronics & Appliances</a></li>
                     <li class="uk-submenu-item"><a href="supply_details.html?supply=it">IT & Communications</a></li>
@@ -90,7 +90,16 @@
                     <li class="uk-submenu-item"><a href="#v-pills-hvac">HVAC (Heating, Ventilating and Air Conditioning)</a></li>-->
                 </ul>
             </li>
-            <li class="uk-menu-item"><a href="our_services.html">Our Services</a></li>
+            <li class="uk-menu-item uk-has-submenu">
+                <a href="our_services.html" onclick="return false;">Our Services</a>
+                <ul class="uk-submenu-long">
+                    <li class="uk-submenu-item"><a href="service_details.html?service=vehicle-leasing">Vehicle Leasing</a></li>
+                    <li class="uk-submenu-item"><a href="service_details.html?service=equipment-leasing">Equipment Leasing</a></li>
+                    <li class="uk-submenu-item"><a href="service_details.html?service=prefab">PREFAB</a></li>
+                    <li class="uk-submenu-item"><a href="service_details.html?service=chain-link-fencing">Chain Link Fencing</a></li>
+                    <li class="uk-submenu-item"><a href="service_details.html?service=generators">Generators</a></li>
+                </ul>
+            </li>
             <li class="uk-menu-item"><a href="gallery.html">Our Showroom</a></li>
             <li class="uk-menu-item"><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -98,25 +107,6 @@
 
 </header>
 
-<!-- header-end -->
-<!-- slider_area_start -->
-<!--
-<div class="slider_area">
-    <div class="single_slider d-flex align-items-center slider_bg">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-xl-8">
-                    <div class="slider_text text-center justify-content-center">
-                        <p>For Personal & Business use</p>
-                        <h3>Global Excellence, Local Expertise</h3>
-                        <a class="boxed-btn3" href="our_supplies.html">Our Services</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
--->
 
 <div class="uk-homepage-slider slider_bg">
     <div class="uk-slider-content">
@@ -179,7 +169,7 @@
             <div class="col-xl-12">
                 <div class="section_title mb-50 text-center">
                     <h3>
-                        Products We Offer
+                        Our Supplies
                     </h3>
                 </div>
             </div>
@@ -189,10 +179,21 @@
                 <div class="service_active owl-carousel">
                     <div class="single_service">
                         <div class="thumb">
+                            <img src="img/our_products/lodging_furniture.jpg" alt="">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="supply_details.html?supply=furniture">&nbsp; Furniture and Fixtures</a></h3>
+                            <p>Metal & Wooden Bunk Beds, Mattresses (Spring, Foam, Medical) All kinds of Bedding Materials, Bed Sheets (Flat
+                                or Fitted) Pillows, Pillow Covers, Blankets, Duvets, Duvet Covers, Towels, Lamp Shades, Table Lamps, Towels &
+                                Lockers. Drawer, Wooden Cabinet, Side Table</p>
+                        </div>
+                    </div>
+                    <div class="single_service">
+                        <div class="thumb">
                             <img src="img/our_products/hardware.jpg" alt="">
                         </div>
                         <div class="service_info">
-                            <h3><a href="service_details.html">Hardware Equipment’s & Tools</a></h3>
+                            <h3><a href="supply_details.html?supply=tools">Hardware Equipment’s & Tools</a></h3>
                             <p>Power tools, Welding machines, Air
                                 compressor machines, Hand tools,
                                 Diesel generators, High pressure
@@ -204,7 +205,7 @@
                             <img src="img/our_products/electrical_appliances.webp" alt="">
                         </div>
                         <div class="service_info">
-                            <h3><a href="service_details.html">Electrical</a></h3>
+                            <h3><a href="supply_details.html?supply=electrical">Electrical</a></h3>
                             <p>Distribution panels, Breakers,
                                 Cables & Wires, Conduit pipes,
                                 Fittings, Lightings, Wiring
@@ -214,12 +215,13 @@
                                 Fixtures and more</p>
                         </div>
                     </div>
+
                     <div class="single_service">
                         <div class="thumb">
                             <img src="img/our_products/plumbing.jpg" alt="">
                         </div>
                         <div class="service_info">
-                            <h3><a href="service_details.html">Plumbing & Sanitation</a></h3>
+                            <h3><a href="supply_details.html?supply=plumbing">Plumbing & Sanitation</a></h3>
                             <p>PVC, CPVC & UPVC Pipes with various
                                 sizes, Pressure Flow control valves,
                                 Check Valves, Fitting Brushes, Basin
@@ -228,13 +230,28 @@
                                 Repair Kits and more</p>
                         </div>
                     </div>
+
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/our_products/gym.webp" alt="">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="supply_details.html?supply=gym">Gym Equipment</a></h3>
+                            <p>PVC, CPVC & UPVC Pipes with various
+                                sizes, Pressure Flow control valves,
+                                Check Valves, Fitting Brushes, Basin
+                                Wrenches, Relief Valves, Pipe Nipples &
+                                Accessories, Cable Clamps, Hangers,
+                                Repair Kits and more</p>
+                        </div>
+                    </div>
+
                     <div class="single_service">
                         <div class="thumb">
                             <img src="img/our_products/havoc.jpg" alt="">
                         </div>
                         <div class="service_info">
-                            <h3><a href="service_details.html">HVAC
-                                (Heating, Ventilating and Air Conditioning)</a></h3>
+                            <h3><a href="supply_details.html?supply=hvac">HVAC</a></h3>
                             <p> Air Conditioner, Air Filter, Boiler, Circulator
                                 Pump, Cooling Tower, Chilled Beam,
                                 Diffuser, Duct, Economizer, Evaporative
@@ -242,12 +259,13 @@
                                 Humidifier</p>
                         </div>
                     </div>
+
                     <div class="single_service">
                         <div class="thumb">
                             <img src="img/service/1.png" alt="">
                         </div>
                         <div class="service_info">
-                            <h3><a href="service_details.html">Pumps</a></h3>
+                            <h3><a href="supply_details.html?supply=pumps">Pumps</a></h3>
                             <p>Airlift Pump, Axial Flow Pump, Beam
                                 Pump, Engine Driven Pump, Walking
                                 Beam Pump, Centrifugal Pump, Chain
@@ -256,12 +274,12 @@
                         </div>
                     </div>
 
-                    <div class="single_service">
+                    <!--<div class="single_service">
                         <div class="thumb">
                             <img src="img/service/2.png" alt="">
                         </div>
                         <div class="service_info">
-                            <h3><a href="service_details.html">Generators & Heavy Equipment’s</a>
+                            <h3><a href="supply_details.html?supply=generators">Generators & Heavy Equipment’s</a>
                             </h3>
                             <p>Diesel Generators, Ground
                                 Support Equipment’s, High &
@@ -269,6 +287,96 @@
                                 Pressure Cleaners, Vacuums,
                                 Spray-Extraction Cleaners, Air
                                 Blower and more</p>
+                        </div>
+                    </div>-->
+
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/service/office_supplies.png" alt="Office Supplies & Stationery">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="supply_details.html?supply=office">Office Supplies & Stationery</a></h3>
+                            <p>Notebooks, Pens, Filing products, Paper shredders, Desktop organizers, Staplers, Clipboards, Calculators,
+                                Office adhesives, Scissors, Binding machines, Conference supplies, ID card printers, Name badges.</p>
+                        </div>
+                    </div>
+
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/service/electronics_appliances.png" alt="Electronics & Appliances">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="supply_details.html?supply=electronics">Electronics & Appliances</a></h3>
+                            <p>Microwaves, Refrigerators, Air conditioners, TVs, Home theaters, Laptops, Mobile phones, Tablets, Printers,
+                                Kitchen appliances, Home automation devices, Washing machines, Speakers, Monitors.</p>
+                        </div>
+                    </div>
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/our_products/kitchen.jpeg" alt="">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="supply_details.html?supply=kitchen">Kitchen/DFAC Supplies</a></h3>
+                            <p>Power tools, Welding machines, Air
+                                compressor machines, Hand tools,
+                                Diesel generators, High pressure
+                                cleaners, Pneumatic tools and more</p>
+                        </div>
+                    </div>
+
+
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/service/it_communications.png" alt="IT & Communications">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="supply_details.html?supply=it">IT & Communications</a></h3>
+                            <p>Routers, Switches, Servers, Network cables, Cloud solutions, Data storage devices, Security systems, IP phones,
+                                Video conferencing equipment, Modems, Firewalls, Wireless access points, Collaboration tools.</p>
+                        </div>
+                    </div>
+
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/service/strainers_filters.png" alt="Strainers & Filters">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="supply_details.html?supply=strainers">Strainers & Filters</a></h3>
+                            <p>Basket strainers, Y strainers, Duplex filters, Bag filters, Cartridge filters, Oil strainers, Gas filters,
+                                Liquid strainers, Mesh filters, Industrial filtration systems, Water filtration systems, Replacement parts.</p>
+                        </div>
+                    </div>
+
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/service/safety_security.png" alt="Safety & Security">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="supply_details.html?supply=safety">Safety & Security</a></h3>
+                            <p>Fire extinguishers, Helmets, Safety goggles, Protective clothing, Safety signs, CCTV cameras, Alarm systems,
+                                Access control systems, Emergency lighting, Fire alarms, Lockout devices, Safety harnesses.</p>
+                        </div>
+                    </div>
+
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/service/janitorial_supplies.png" alt="Janitorial Supplies & Cleaning Products">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="supply_details.html?supply=janitorial">Janitorial Supplies & Cleaning Products</a></h3>
+                            <p>Floor cleaners, Dustbins, Mops, Cleaning brushes, Disinfectants, Hand sanitizers, Paper towels, Vacuum cleaners,
+                                Window cleaning tools, Scrubbers, Polishing equipment, Trash bags, Odor control products.</p>
+                        </div>
+                    </div>
+
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/service/oil_lubricants.png" alt="Oil and Lubricants">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="supply_details.html?supply=oil">Oil and Lubricants</a></h3>
+                            <p>Engine oils, Hydraulic oils, Gear oils, Synthetic lubricants, Greases, Industrial oils, Compressor oils,
+                                Cutting fluids, Rust preventatives, Food-grade lubricants, Biodegradable oils, Additives, Sealants.</p>
                         </div>
                     </div>
 
@@ -278,7 +386,7 @@
     </div>
 </div>
 
-<!-- chose_area  -->
+<!----- About Us ----->
 <div class="chose_area ">
     <div class="container">
         <div class="features_main_wrap">
@@ -316,7 +424,7 @@
     </div>
 </div>
 <!--/ chose_area  -->
-<!-----Our Brands---->
+<!-----Our Brands Starts---->
 <div class="service_area">
     <div class="container">
         <div class="row">
@@ -336,7 +444,7 @@
                             <img src="img/our_brands/grainger_transparent.png" alt="">
                         </div>
                         <div class="service_info">
-                            <h3><a href="service_details.html">Grainger</a></h3>
+                            <h3><a href="brand_details.html?brand=grainger">Grainger</a></h3>
                             <p>W.W. Grainger, Inc., is a leading broad line distributor with
                                 operations primarily in North America, Japan and the United Kingdom.
                                 At Grainger, We Keep the World Working® by serving more than 4.5
@@ -349,7 +457,7 @@
                             <img src="img/our_brands/milwaukee_white_bg.png" alt="">
                         </div>
                         <div class="service_info">
-                            <h3><a href="service_details.html">Milwaukee</a></h3>
+                            <h3><a href="brand_details.html?brand=milwaukee">Milwaukee</a></h3>
                             <p>Milwaukee Electric Tool Corporation, known more commonly as Milwaukee
                                 Tool, is a multi-national company that develops, manufactures, and
                                 markets power tools, hand tools, tool accessories, tool storage, and
@@ -362,7 +470,7 @@
                             <img src="img/our_brands/pelican.png" alt="">
                         </div>
                         <div class="service_info">
-                            <h3><a href="service_details.html">Pelican</a></h3>
+                            <h3><a href="brand_details.html?brand=pelican">Pelican</a></h3>
                             <p>Pelican, founded in 1976, is renowned for its rugged protective
                                 cases, coolers, and lighting solutions designed to withstand extreme
                                 conditions. Trusted across industries like military, law
@@ -376,7 +484,7 @@
                             <img src="img/our_brands/dewalt.jpg" alt="">
                         </div>
                         <div class="service_info">
-                            <h3><a href="service_details.html">Dewalt</a></h3>
+                            <h3><a href="brand_details.html?brand=dewalt">Dewalt</a></h3>
                             <p>The DeWalt Industrial Tool Company is an American worldwide
                                 manufacturer of power tools and hand tools for the construction,
                                 manufacturing and woodworking industries, as well as home
@@ -389,7 +497,7 @@
                             <img src="img/our_brands/brady.jpeg" alt="">
                         </div>
                         <div class="service_info">
-                            <h3><a href="service_details.html">Brady</a></h3>
+                            <h3><a href="brand_details.html?brand=brady">Brady</a></h3>
                             <p>Brady is a global leader in industrial labeling, providing
                                 high-quality products for safety, identification, and asset
                                 management. Known for its durable labels and markers, it serves
@@ -401,33 +509,11 @@
         </div>
     </div>
 </div>
+<!-----Our Brands Ends---->
 
-<!-----Our Clients---->
-<!--<div class="service_area">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="section_title mb-50 text-center">
-                    <h3>
-                        Our Clients
-                    </h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="service_active owl-carousel">
-                            <img src="img/clinets/client_1.png" alt="">
-                </div>
-                <div class="service_active owl-carousel">
-                            <img src="img/clinets/client_2.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
-<!-- Client Section Start -->
-<div class="uk_client_area">
+
+<!-- Client Section Starts -->
+<div class="uk_client_area" style="padding-bottom:60px;">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -479,11 +565,89 @@
         </div>
     </div>
 </div>
+<!-- Client Section Ends -->
 
 
+<!--------------Our Services--------------->
+<div class="service_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title mb-50 text-center">
+                    <h3>
+                        Our Services
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="service_active owl-carousel">
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/our_services/vehicle_leasing_2.jpeg" alt="">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="service_details.html?service=vehicle-leasing">Vehicle Leasing</a></h3>
+                            <p>Humvees, Armored Personnel Carriers (APCs), Light Tactical Vehicles (LTVs), Mine-Resistant Ambush Protected Vehicles (MRAPs), Utility Trucks, Heavy Expanded Mobility Tactical Trucks (HEMTTs), Medium Tactical Vehicles (MTVs)</p>
+                        </div>
+                    </div>
 
-<!-- Client Section End -->
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/our_services/equipment_leasing.jpeg" alt="">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="service_details.html?service=equipment-leasing">Equipment Leasing</a></h3>
+                            <p>Generators, Light-Towers, Bulldozers, Bobcats, Excavators, Jackhammers, Forklifts, Extendable Booms, Graders, Loaders, Cranes, Rollers, Sheepsfoot, Concrete Mixers, Concrete Pumps, Dump Trucks, Water Trucks</p>
+                        </div>
+                    </div>
 
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/our_services/prefab.webp" alt="">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="service_details.html?service=prefab">PREFAB</a></h3>
+                            <p>Pelican, founded in 1976, is renowned for its rugged protective
+                                cases, coolers, and lighting solutions designed to withstand extreme
+                                conditions. Trusted across industries like military, law
+                                enforcement, and photography.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="single_service">
+                        <div class="thumb">
+                            <img src="img/our_services/chain_link_fencing.png" alt="">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="service_details.html?service=chain-link-fencing">Chain Link Fencing</a></h3>
+                            <p>The DeWalt Industrial Tool Company is an American worldwide
+                                manufacturer of power tools and hand tools for the construction,
+                                manufacturing and woodworking industries, as well as home
+                                craftspeople.</p>
+                        </div>
+                    </div>
+
+                    <!--<div class="single_service">
+                        <div class="thumb">
+                            <img src="img/our_brands/dewalt.jpg" alt="">
+                        </div>
+                        <div class="service_info">
+                            <h3><a href="brand_details.html?brand=dewalt">Generators</a></h3>
+                            <p>The DeWalt Industrial Tool Company is an American worldwide
+                                manufacturer of power tools and hand tools for the construction,
+                                manufacturing and woodworking industries, as well as home
+                                craftspeople.</p>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------Our Services Ends--------------->
 
 <!-- Estimate_area start  -->
 <div class="Estimate_area overlay">
