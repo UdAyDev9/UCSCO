@@ -44,12 +44,15 @@
         <!-- <div class="uk-logo-name">
              <img src="img/logo_name.png" alt="Logo Name">
          </div>-->
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <span>&#9776;</span>
+        </button>
         <nav class="uk-nav-links">
             <ul class="uk-menu">
                 <li class="uk-menu-item"><a href="index.html">Home</a></li>
                 <li class="uk-menu-item"><a href="about.html">About</a></li>
                 <li class="uk-menu-item uk-has-submenu">
-                    <a href="our_brands.html">Our Brands</a>
+                    <a href="our_brands.html" onclick="return false;">Our Brands</a>
                     <ul class="uk-submenu">
                         <li class="uk-submenu-item"><a href="brand_details.html?brand=grainger">Grainger</a></li>
                         <li class="uk-submenu-item"><a href="brand_details.html?brand=milwaukee">Milwaukee</a></li>
@@ -58,13 +61,42 @@
                         <li class="uk-submenu-item"><a href="brand_details.html?brand=brady">Brady</a></li>
                     </ul>
                 </li>
-                <li class="uk-menu-item"><a href="our_supplies.html">Our Supplies</a></li>
-                <li class="uk-menu-item"><a href="our_services.html">Our Services</a></li>
+                <li class="uk-menu-item uk-has-submenu">
+                    <a href="our_supplies.html" onclick="return false;">Our Supplies</a>
+                    <ul class="uk-submenu-long">
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=furniture">Furniture and Fixtures</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=tools">Hardware Equipment’s & Tools</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=electrical">Electrical</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=plumbing">Plumbing & Sanitation</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=pumps">Pumps</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=office">Office Supplies & Stationery</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=electronics">Electronics & Appliances</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=it">IT & Communications</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=strainers">Strainers & Filters</a></li>
+
+                        <!--<li class="uk-submenu-item"><a href="#v-pills-safety">Safety & Security</a></li>
+                        <li class="uk-submenu-item"><a href="#v-pills-janitorial">Janitorial Supplies & Cleaning Products</a></li>
+                        <li class="uk-submenu-item"><a href="#v-pills-oil">Oil and Lubricants</a></li>
+                        <li class="uk-submenu-item"><a href="#v-pills-hvac">HVAC (Heating, Ventilating and Air Conditioning)</a></li>-->
+                    </ul>
+                </li>
+                <li class="uk-menu-item uk-has-submenu">
+                    <a href="our_services.html" onclick="return false;">Our Services</a>
+                    <ul class="uk-submenu-long">
+                        <li class="uk-submenu-item"><a href="service_details.html?service=vehicle-leasing">Vehicle Leasing</a></li>
+                        <li class="uk-submenu-item"><a href="service_details.html?service=equipment-leasing">Equipment Leasing</a></li>
+                        <li class="uk-submenu-item"><a href="service_details.html?service=prefab">PREFAB</a></li>
+                        <li class="uk-submenu-item"><a href="service_details.html?service=chain-link-fencing">Chain Link Fencing</a></li>
+                        <li class="uk-submenu-item"><a href="service_details.html?service=generators">Generators</a></li>
+                    </ul>
+                </li>
                 <li class="uk-menu-item"><a href="gallery.html">Our Showroom</a></li>
                 <li class="uk-menu-item"><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+
     </header>
+
     <!-- header-end -->
 
     <!-- bradcam_area  -->
@@ -102,11 +134,20 @@
                         <!-- Grainger -->
                         <div class="tab-pane fade show active" id="v-pills-grainger" role="tabpanel" aria-labelledby="v-pills-grainger-tab">
                             <div class="service_details_info">
+
                                 <h3>Grainger</h3>
-                                <p>Grainger is a leader in industrial supplies, offering top-quality products for maintenance, repair, and operational needs. From safety gear to tools, Grainger ensures businesses run efficiently. Trusted by professionals for over 90 years, Grainger provides reliable solutions for every industry. Their vast inventory includes fasteners, adhesives, motors, and more. Choose Grainger for unparalleled service and high-performance industrial products.</p>
+
+                                <p>Grainger is a globally recognized leader in industrial tools, equipment, and supplies, trusted by professionals across industries for over nine decades. With a commitment to quality and innovation, Grainger offers a comprehensive range of tools, safety products, and industrial solutions tailored to meet the unique needs of construction, maintenance, manufacturing, and repair operations.</p>
+
+<!--
+                                <p>From hand tools and power tools to safety gear, electrical supplies, and facility maintenance equipment, Grainger ensures exceptional performance, reliability, and efficiency. Known for its durability and precision, every Grainger product is designed to withstand the toughest challenges and deliver outstanding results.</p>
+-->
                             </div>
-                            <div class="service_thumb">
-                                <img class="img-fluid" src="img/service/grainger_details.png" alt="Grainger">
+                            <div class="details_page-hover-effect">
+                                <a href="https://www.grainger.com" target="_blank">
+                                    <img class="img-fluid" src="img/our_brands/grainger_banner.jpeg" alt="Grainger">
+                                    <div class="overlay"></div> <!-- This div will be used to create the overlay effect -->
+                                </a>
                             </div>
                         </div>
                         <!-- Milwaukee -->
@@ -115,8 +156,11 @@
                                 <h3>Milwaukee</h3>
                                 <p>Milwaukee is synonymous with cutting-edge power tools and innovative hand tools built for professionals. Known for durability, Milwaukee products deliver unmatched performance in demanding environments. Explore cordless solutions, impact drivers, and saws designed to boost efficiency. Milwaukee's tools cater to construction, woodworking, and electrical applications. Trust Milwaukee for industry-leading tools that get the job done right.</p>
                             </div>
-                            <div class="service_thumb">
-                                <img class="img-fluid" src="img/service/milwaukee_details.png" alt="Milwaukee">
+                            <div class="details_page-hover-effect">
+                                <a href="https://www.milwaukeetool.com" target="_blank">
+                                    <img class="img-fluid" src="img/our_brands/milwaukee_banner.jpg" alt="Grainger">
+                                    <div class="overlay"></div> <!-- This div will be used to create the overlay effect -->
+                                </a>
                             </div>
                         </div>
                         <!-- Pelican -->
@@ -125,8 +169,11 @@
                                 <h3>Pelican</h3>
                                 <p>Pelican is the ultimate choice for rugged protective cases and advanced lighting systems. Their durable cases provide unmatched protection for gear, electronics, and sensitive equipment. Pelican's temperature-controlled containers ensure safe transport of critical items. Ideal for adventurers, military, and professionals, Pelican products are built to last. Choose Pelican for safety and reliability in extreme conditions.</p>
                             </div>
-                            <div class="service_thumb">
-                                <img class="img-fluid" src="img/service/pelican_details.png" alt="Pelican">
+                            <div class="details_page-hover-effect">
+                                <a href="https://www.pelican.com/" target="_blank">
+                                    <img class="img-fluid" src="img/our_brands/pelican_banner.jpg" alt="Grainger">
+                                    <div class="overlay"></div> <!-- This div will be used to create the overlay effect -->
+                                </a>
                             </div>
                         </div>
                         <!-- Dewalt -->
@@ -135,8 +182,11 @@
                                 <h3>Dewalt</h3>
                                 <p>Dewalt is a powerhouse in high-performance power tools and hand tools tailored for professionals and DIYers. Renowned for cordless innovation, Dewalt's drills, saws, and grinders are industry staples. Their products combine power, durability, and precision for outstanding results. Whether on a construction site or in a workshop, Dewalt tools excel in all tasks. Experience superior quality with Dewalt's trusted brand legacy.</p>
                             </div>
-                            <div class="service_thumb">
-                                <img class="img-fluid" src="img/service/dewalt_details.png" alt="Dewalt">
+                            <div class="details_page-hover-effect">
+                                <a href="https://www.dewalt.com/" target="_blank">
+                                    <img class="img-fluid" src="img/our_brands/dewalt_banner.jpg" alt="Grainger">
+                                    <div class="overlay"></div> <!-- This div will be used to create the overlay effect -->
+                                </a>
                             </div>
                         </div>
                         <!-- Brady -->
@@ -145,8 +195,11 @@
                                 <h3>Brady</h3>
                                 <p>Brady specializes in workplace safety and compliance with top-notch labeling and identification solutions. Their industrial printers and signs streamline operations and enhance efficiency. Brady’s labels ensure clear communication in hazardous environments, boosting safety. Trusted globally, Brady products are essential for workplace organization. Choose Brady for reliable, compliant, and efficient safety solutions.</p>
                             </div>
-                            <div class="service_thumb">
-                                <img class="img-fluid" src="img/service/brady_details.png" alt="Brady">
+                            <div class="details_page-hover-effect">
+                                <a href="https://www.bradyid.com/" target="_blank">
+                                    <img class="img-fluid" src="img/our_brands/brady_banner.png" alt="Grainger">
+                                    <div class="overlay"></div> <!-- This div will be used to create the overlay effect -->
+                                </a>
                             </div>
                         </div>
                         <!-- Brochure Download Section -->
@@ -178,37 +231,38 @@
                 <div class="col-xl-4 col-lg-4 col-md-5">
                     <div class="Estimate_info">
                         <h3>Get a Quick Quote</h3>
-                        <p>We're here to assist with any questions or needs you may have. Reach out and let us provide the support and information you're looking for.</p>
+                        <p>We're here to assist with any questions or needs you may have. Reach out and
+                            let us provide the support and information you're looking for.</p>
                         <a href="#" class="boxed-btn3">-NA-</a>
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-8 col-md-7">
                     <div class="form">
-                        <form action="#">
+                        <form action="mail.php" method="post">
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="input_field">
-                                        <input type="text" placeholder="First name">
+                                        <input type="text" name="name" placeholder="Your Full Name" required>
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="input_field">
-                                        <input type="text" placeholder="Last name">
+                                        <input type="email" name="email" placeholder="Your Email Id" required>
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="input_field">
-                                        <input type="email" placeholder="Email">
+                                        <input type="number" name="number" placeholder="Mobile Number" required>
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="input_field">
-                                        <input type="number" placeholder="Mobile Number">
+                                        <input type="text" name="subject" placeholder="Subject" required>
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
                                     <div class="input_field">
-                                        <textarea placeholder="Message"></textarea>
+                                        <textarea name="message" placeholder="Details" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
@@ -223,45 +277,10 @@
             </div>
         </div>
     </div>
+
     <!-- Estimate_area end  -->
 
     <!-- contact_location  -->
-    <div class="contact_location">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="location_left">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="img/logo_ucsco_transparent.png" alt="">
-                            </a>
-                        </div>
-                        <ul>
-                            <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                            <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
-                            <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                            <li><a href="#"> <i class="fa fa-youtube"></i> </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-3">
-                    <div class="single_location">
-                        <h3> <img src="img/icon/address.svg" alt=""> Location</h3>
-                        <p>Kingdom of Saudi Arabia <br> Office#:5, Saad Complex, <br>Arafat Rd, Ad Dar Al Baida, <br>Riyadh</p>
-
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-3">
-                    <div class="single_location">
-                        <h3> <img src="img/icon/support.svg" alt=""> Connect</h3>
-                        <p>Mob: -NA-<br>
-                            Mail: info@ucscoksa.com <br>
-                            Working hrs:  9am to 6pm</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <!--/ contact_location  -->

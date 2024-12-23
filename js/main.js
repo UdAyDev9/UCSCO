@@ -545,3 +545,8 @@ $(document).ready(function(){
 
 
 ///*---------------------------------------------------------------Our Clients Ends-----------------------------------/*
+
+    function toggleMenu() {
+        const menu = document.querySelector('.uk-menu');
+        menu.classList.toggle('show');
+    }

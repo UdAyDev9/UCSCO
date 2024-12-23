@@ -230,27 +230,53 @@ body {
 @media (max-width: 768px) {
     .uk-navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch; /* Align items to stretch fully */
         padding: 15px;
     }
 
     .uk-menu {
+        display: none; /* Initially hide the menu */
         flex-direction: column;
         gap: 10px;
         background-color: var(--mobile-menu-bg);
         width: 100%;
+        margin-top: 10px; /* Space between navbar and menu */
+        padding: 10px 0; /* Add padding for mobile */
+    }
+
+    .uk-menu.show {
+        display: flex; /* Show menu when toggle is active */
     }
 
     .uk-menu-item a {
         color: var(--mobile-menu-text-color);
         text-align: left;
+        padding: var(--text-padding);
+        width: 100%; /* Full-width clickable area */
     }
 
-    .uk-submenu-long {
-        position: relative;
-        box-shadow: none;
+    .menu-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        background-color: var(--nav-bg-color);
+        border: none;
+        width: 100%;
+        padding: 10px;
+        font-size: 1.2em;
+        color: var(--nav-text-color);
+    }
+
+    .menu-toggle:focus {
+        outline: none;
+    }
+
+    .menu-toggle span {
+        font-size: 1.5em;
     }
 }
+
 
 /* Add styles for active menu item */
 .uk-menu-item.active a {
@@ -269,3 +295,37 @@ body {
 .uk-submenu-long li:not(:last-child) a {
     border-radius: 0;
 }
+
+.menu-toggle {
+    display: none; /* Hidden by default for larger screens */
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        background-color: var(--nav-bg-color);
+        border: none;
+        width: 100%;
+        padding: 10px;
+        font-size: 1.2em;
+        color: var(--nav-text-color);
+    }
+}
+
+@media (max-width: 768px) {
+    .uk-submenu {
+        position: relative;
+        display: none; /* Hide submenu by default */
+        flex-direction: column;
+        box-shadow: none;
+        width: 100%; /* Make it full-width for mobile */
+    }
+
+    .uk-menu-item:hover > .uk-submenu {
+        display: flex; /* Show submenu on hover */
+    }
+}
+

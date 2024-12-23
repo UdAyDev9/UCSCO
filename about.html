@@ -43,28 +43,59 @@
         <!-- <div class="uk-logo-name">
              <img src="img/logo_name.png" alt="Logo Name">
          </div>-->
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <span>&#9776;</span>
+        </button>
         <nav class="uk-nav-links">
             <ul class="uk-menu">
                 <li class="uk-menu-item"><a href="index.html">Home</a></li>
                 <li class="uk-menu-item"><a href="about.html">About</a></li>
                 <li class="uk-menu-item uk-has-submenu">
-                    <a href="our_brands.html">Our Brands</a>
+                    <a href="our_brands.html" onclick="return false;">Our Brands</a>
                     <ul class="uk-submenu">
-                        <li class="uk-submenu-item"><a href="brand_details.html?brand=brand1">Brand
-                            1</a></li>
-                        <li class="uk-submenu-item"><a href="brand_details.html?brand=brand2">Brand
-                            2</a></li>
-                        <li class="uk-submenu-item"><a href="brand_details.html?brand=brand3">Brand New
-                            Brand 3</a></li>
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=grainger">Grainger</a></li>
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=milwaukee">Milwaukee</a></li>
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=pelican">Pelican</a></li>
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=dewalt">Dewalt</a></li>
+                        <li class="uk-submenu-item"><a href="brand_details.html?brand=brady">Brady</a></li>
                     </ul>
                 </li>
-                <li class="uk-menu-item"><a href="our_supplies.html">Our Supplies</a></li>
-                <li class="uk-menu-item"><a href="our_services.html">Our Services</a></li>
+                <li class="uk-menu-item uk-has-submenu">
+                    <a href="our_supplies.html" onclick="return false;">Our Supplies</a>
+                    <ul class="uk-submenu-long">
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=furniture">Furniture and Fixtures</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=tools">Hardware Equipment’s & Tools</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=electrical">Electrical</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=plumbing">Plumbing & Sanitation</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=pumps">Pumps</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=office">Office Supplies & Stationery</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=electronics">Electronics & Appliances</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=it">IT & Communications</a></li>
+                        <li class="uk-submenu-item"><a href="supply_details.html?supply=strainers">Strainers & Filters</a></li>
+
+                        <!--<li class="uk-submenu-item"><a href="#v-pills-safety">Safety & Security</a></li>
+                        <li class="uk-submenu-item"><a href="#v-pills-janitorial">Janitorial Supplies & Cleaning Products</a></li>
+                        <li class="uk-submenu-item"><a href="#v-pills-oil">Oil and Lubricants</a></li>
+                        <li class="uk-submenu-item"><a href="#v-pills-hvac">HVAC (Heating, Ventilating and Air Conditioning)</a></li>-->
+                    </ul>
+                </li>
+                <li class="uk-menu-item uk-has-submenu">
+                    <a href="our_services.html" onclick="return false;">Our Services</a>
+                    <ul class="uk-submenu-long">
+                        <li class="uk-submenu-item"><a href="service_details.html?service=vehicle-leasing">Vehicle Leasing</a></li>
+                        <li class="uk-submenu-item"><a href="service_details.html?service=equipment-leasing">Equipment Leasing</a></li>
+                        <li class="uk-submenu-item"><a href="service_details.html?service=prefab">PREFAB</a></li>
+                        <li class="uk-submenu-item"><a href="service_details.html?service=chain-link-fencing">Chain Link Fencing</a></li>
+                        <li class="uk-submenu-item"><a href="service_details.html?service=generators">Generators</a></li>
+                    </ul>
+                </li>
                 <li class="uk-menu-item"><a href="gallery.html">Our Showroom</a></li>
                 <li class="uk-menu-item"><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+
     </header>
+
 
     <!-- header-end -->
 
@@ -94,7 +125,7 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6">
                         <div class="features_info">
-                            <h3>About Us</h3>
+                            <h3>UCSCO</h3>
                             <p>Established in 2020, UCSCO international is a leading Saudi company with business interests in trading with a mission to
                                 market good quality and economical priced products in Kingdom of Saudi Arabia. Fortunately, soon after its
                                 establishment, UCSCO started embracing successful market response and on a world of material supply, our company has
@@ -194,37 +225,38 @@
                 <div class="col-xl-4 col-lg-4 col-md-5">
                     <div class="Estimate_info">
                         <h3>Get a Quick Quote</h3>
-                        <p>We're here to assist with any questions or needs you may have. Reach out and let us provide the support and information you're looking for.</p>
+                        <p>We're here to assist with any questions or needs you may have. Reach out and
+                            let us provide the support and information you're looking for.</p>
                         <a href="#" class="boxed-btn3">-NA-</a>
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-8 col-md-7">
                     <div class="form">
-                        <form action="#">
+                        <form action="mail.php" method="post">
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="input_field">
-                                        <input type="text" placeholder="First name">
+                                        <input type="text" name="name" placeholder="Your Full Name" required>
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="input_field">
-                                        <input type="text" placeholder="Last name">
+                                        <input type="email" name="email" placeholder="Your Email Id" required>
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="input_field">
-                                        <input type="email" placeholder="Email">
+                                        <input type="number" name="number" placeholder="Mobile Number" required>
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="input_field">
-                                        <input type="number" placeholder="Mobile Number">
+                                        <input type="text" name="subject" placeholder="Subject" required>
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
                                     <div class="input_field">
-                                        <textarea placeholder="Message"></textarea>
+                                        <textarea name="message" placeholder="Details" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
@@ -240,8 +272,6 @@
         </div>
     </div>
     <!-- Estimate_area end  -->
-
-
 
     <!-- footer start -->
     <footer class="footer">
@@ -311,7 +341,8 @@
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                            All rights reserved
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>

@@ -4974,7 +4974,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 }
 
 .bradcam_bg_1 {
-  background-image: url(../img/banner/bradcam.png);
+  background-image: url(../img/banner/about_bradcam.jpeg);
 }
 .bradcam_bg_1_contact {
   background-image: url(../img/contact_us/contact_us.jpg);
@@ -4982,7 +4982,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 
 /* line 4, ../../A/CL/Cl November/223. Transportation/HTML/scss/_bradcam.scss */
 .bradcam_bg_2 {
-  background-image: url(../img/banner/bradcam2.png);
+  background-image: url(../img/banner/brands_details_banner.jpg);
 }
 
 /* line 7, ../../A/CL/Cl November/223. Transportation/HTML/scss/_bradcam.scss */
@@ -9189,3 +9189,38 @@ Slider Starts*/
     text-align: left; /* Keep text aligned in the center */
     padding: 20px 0; /* Adjust padding for better spacing */
 }
+
+/*-------------------Details Page Image Hover Effect Starts-----------------------------------------------*/
+/* Class for the div container */
+.details_page-hover-effect {
+    position: relative;
+    display: inline-block; /* Keeps the image inline */
+}
+
+.details_page-hover-effect img {
+    display: block; /* Ensures the image takes up full width without extra space */
+    transition: opacity 0.3s ease; /* Fade transition */
+}
+
+/* Overlay effect */
+.details_page-hover-effect .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Fade in/out transition */
+}
+
+/* Show overlay on hover */
+.details_page-hover-effect a:hover .overlay {
+    opacity: 0.1; /* Overlay becomes visible */
+}
+
+.details_page-hover-effect a:hover img {
+    opacity: 0.7; /* Slightly fade out the image */
+}
+
+
+/*-------------------Details Page Image Hover Effect Ends-----------------------------------------------*/
