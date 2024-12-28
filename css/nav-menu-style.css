@@ -329,3 +329,28 @@ body {
     }
 }
 
+/*------------Company Name------------*/
+
+.uk-company-name {
+    color: #FF5733; /* Matches the vibrant orange-red of your theme */
+    font-family: 'Balbek', sans-serif; /* Matches the website font for consistency */
+    font-size: 1.2rem; /* Base font size */
+    letter-spacing: 0.5px; /* Adds subtle spacing for a polished look */
+}
+
+/* Medium screens (tablets and smaller devices) */
+@media (max-width: 768px) {
+    .uk-company-name {
+        font-size: 1rem; /* Slightly smaller font size for tablets */
+        letter-spacing: 0.4px; /* Adjust spacing for smaller screens */
+    }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 480px) {
+    .uk-company-name {
+        font-size: 0.9rem; /* Further reduce font size for mobile devices */
+        letter-spacing: 0.3px; /* Adjust spacing further */
+    }
+}
+

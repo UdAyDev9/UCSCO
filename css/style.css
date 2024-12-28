@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
 
+@font-face {
+    font-family: 'Balbek';
+    src: url('../fonts/balbek-regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 :root {
     --primary-color:#FF3414;
     --secondary-color:#bc1444;
@@ -4973,19 +4981,6 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
   color: var(--primary-color);
 }
 
-.bradcam_bg_1 {
-  background-image: url(../img/banner/about_bradcam.jpeg);
-}
-.bradcam_bg_1_contact {
-  background-image: url(../img/contact_us/contact_us.jpg);
-}
-
-/* line 4, ../../A/CL/Cl November/223. Transportation/HTML/scss/_bradcam.scss */
-.bradcam_bg_2 {
-  background-image: url(../img/banner/brands_details_banner.jpg);
-}
-
-/* line 7, ../../A/CL/Cl November/223. Transportation/HTML/scss/_bradcam.scss */
 .bradcam_area {
   width: 100%;
    height: 400px; /* Strictly enforce the height */
@@ -5000,7 +4995,6 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
    justify-content: center; /* Center content horizontally */
 }
 
-/* line 15, ../../A/CL/Cl November/223. Transportation/HTML/scss/_bradcam.scss */
 .bradcam_area.bradcam_area2 {
   padding: 265px 0;
 }
