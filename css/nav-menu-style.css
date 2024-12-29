@@ -91,6 +91,7 @@ body {
 .uk-menu-item a:hover {
     background-color: var(--nav-item-bg-color);
     color: var(--main-item-hover-color);
+     font-weight: 500;
 }
 
 /* Submenu Items */
@@ -103,11 +104,6 @@ body {
     transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 
-/* Hover Effect for Submenu Items */
-.uk-submenu-item a:hover {
-    background-color: var(--submenu-hover-bg-color);
-    color: var(--submenu-hover-text-color);
-}
 
 /* Submenu Styles */
 .uk-submenu {
@@ -172,10 +168,17 @@ body {
 }
 
 /* Add styles for active menu item */
+/* For main active menu item */
 .uk-menu-item.active a {
     color: var(--nav-hover-text-color);
     background-color: var(--nav-hover-bg-color);
-    font-weight: 600;
+    font-weight: 500;
+}
+
+/* For active submenu item */
+.uk-submenu-item a.active {
+    background-color: var(--submenu-hover-bg-color);
+    color: var(--submenu-hover-text-color);
 }
 
 
@@ -355,3 +358,73 @@ body {
     }
 }
 
+/* Highlight active main menu item */
+/* General styles for submenu */
+.uk-submenu,
+.uk-submenu-long {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--submenu-bg-color);
+    border-radius: var(--submenu-border-radius);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 100;
+}
+
+/* Submenu specific widths */
+.uk-submenu {
+    min-width: var(--submenu-width);
+}
+
+.uk-submenu-long {
+    min-width: var(--submenu-width-long);
+}
+
+/* Show submenu on hover */
+.uk-has-submenu:hover .uk-submenu,
+.uk-has-submenu:hover .uk-submenu-long {
+    display: flex;
+    animation: fadeIn var(--transition-speed) ease;
+}
+
+/* Active styles for main menu items */
+.uk-menu-item.active > a {
+    color: var(--nav-hover-text-color); /* Active text color */
+    background-color: var(--nav-hover-bg-color); /* Active background color */
+    /* Optional: Make it bold */
+}
+
+/* Prevent submenu items from inheriting active styles */
+.uk-menu-item.active .uk-submenu-item a,
+.uk-menu-item.active .uk-submenu-long .uk-submenu-item a {
+    background-color: white !important;
+    color: var(--nav-text-color) !important;
+    font-weight: normal !important;
+}
+
+/* Hover effect for submenu items */
+.uk-menu-item.active .uk-submenu-item a:hover,
+.uk-menu-item.active .uk-submenu-long .uk-submenu-item a:hover {
+    background-color: var(--submenu-hover-bg-color) !important;
+    color: var(--submenu-hover-text-color) !important;
+    font-weight: normal !important;
+}
+
+/* Ensure submenu items remain styled only on hover */
+.uk-menu-item:hover > .uk-submenu .uk-submenu-item a,
+.uk-menu-item:hover > .uk-submenu-long .uk-submenu-item a {
+    background-color: white !important;
+    color: var(--nav-text-color) !important;
+}
+
+.uk-menu-item:hover > .uk-submenu .uk-submenu-item a:hover,
+.uk-menu-item:hover > .uk-submenu-long .uk-submenu-item a:hover {
+    background-color: var(--submenu-hover-bg-color) !important;
+    color: var(--submenu-hover-text-color) !important;
+    font-weight: normal !important;
+}

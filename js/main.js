@@ -568,13 +568,3 @@ window.addEventListener('load', function () {
         }, 500); // Match the transition duration
     }
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-const currentPage = window.location.pathname.split("/").pop(); // Get the current page name
-const ourBrandsMenu = document.getElementById('our-brands-menu');
-
-if (currentPage === 'brand_details.html') {
-// Add the active class to the parent menu item
-ourBrandsMenu.classList.add('active');
-}
-});

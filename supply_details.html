@@ -37,69 +37,70 @@
     <div class="spinner"></div>
 </div>
     <!-- header-start -->
-    <header class="uk-navbar">
-        <a href="index.html">
+<header class="uk-navbar">
+    <!--<div class="uk-logo">
+        <img src="img/company_name_orange_only_small_2.png" alt="Logo">
+    </div>-->
+    <a href="index.html">
         <div class="uk-company-name">
             United Commercial Space Company
         </div>
     </a>
-        <!-- <div class="uk-logo-name">
-             <img src="img/logo_name.png" alt="Logo Name">
-         </div>-->
-        <button class="menu-toggle" onclick="toggleMenu()">
-            <span>&#9776;</span>
-        </button>
-        <nav class="uk-nav-links">
-            <ul class="uk-menu">
-                <li class="uk-menu-item"><a href="index.html">Home</a></li>
-                <li class="uk-menu-item"><a href="about.html">About</a></li>
-                <li class="uk-menu-item uk-has-submenu">
-                    <a href="our_brands.html" onclick="return false;">Our Brands</a>
-                    <ul class="uk-submenu">
-                        <li class="uk-submenu-item"><a href="brand_details.html?brand=grainger">Grainger</a></li>
-                        <li class="uk-submenu-item"><a href="brand_details.html?brand=milwaukee">Milwaukee</a></li>
-                        <li class="uk-submenu-item"><a href="brand_details.html?brand=pelican">Pelican</a></li>
-                        <li class="uk-submenu-item"><a href="brand_details.html?brand=dewalt">Dewalt</a></li>
-                        <li class="uk-submenu-item"><a href="brand_details.html?brand=brady">Brady</a></li>
-                    </ul>
-                </li>
-                <li class="uk-menu-item uk-has-submenu" id="our-supplies-menu">
-                    <a href="our_supplies.html" onclick="return false;">Our Supplies</a>
-                    <ul class="uk-submenu-long">
-                        <li class="uk-submenu-item"><a href="supply_details.html?supply=furniture">Furniture and Fixtures</a></li>
-                        <li class="uk-submenu-item"><a href="supply_details.html?supply=tools">Hardware Equipment’s & Tools</a></li>
-                        <li class="uk-submenu-item"><a href="supply_details.html?supply=electrical">Electrical</a></li>
-                        <li class="uk-submenu-item"><a href="supply_details.html?supply=plumbing">Plumbing & Sanitation</a></li>
-                        <li class="uk-submenu-item"><a href="supply_details.html?supply=pumps">Pumps</a></li>
-                        <li class="uk-submenu-item"><a href="supply_details.html?supply=office">Office Supplies & Stationery</a></li>
-                        <li class="uk-submenu-item"><a href="supply_details.html?supply=electronics">Electronics & Appliances</a></li>
-                        <li class="uk-submenu-item"><a href="supply_details.html?supply=it">IT & Communications</a></li>
-                        <li class="uk-submenu-item"><a href="supply_details.html?supply=strainers">Strainers & Filters</a></li>
+    <button class="menu-toggle" onclick="toggleMenu()">
+        <span>&#9776;</span>
+    </button>
+    <nav class="uk-nav-links">
+        <ul class="uk-menu">
+            <li class="uk-menu-item"><a href="index.html">Home</a></li>
+            <li class="uk-menu-item"><a href="about.html">About</a></li>
+            <li class="uk-menu-item uk-has-submenu">
+                <a href="brand_details.html">Our Brands</a>
+                <ul class="uk-submenu">
+                    <li class="uk-submenu-item"><a href="brand_details.html?brand=grainger">Grainger</a></li>
+                    <li class="uk-submenu-item"><a href="brand_details.html?brand=milwaukee">Milwaukee</a></li>
+                    <li class="uk-submenu-item"><a href="brand_details.html?brand=pelican">Pelican</a></li>
+                    <li class="uk-submenu-item"><a href="brand_details.html?brand=dewalt">Dewalt</a></li>
+                    <li class="uk-submenu-item"><a href="brand_details.html?brand=brady">Brady</a></li>
+                </ul>
+            </li>
+            <li class="uk-menu-item uk-has-submenu">
+                <a href="supply_details.html">Our Supplies</a>
+                <ul class="uk-submenu-long">
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=furniture">Furniture and Fixtures</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=tools">Hardware Equipment’s & Tools</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=electrical">Electrical</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=plumbing">Plumbing & Sanitation</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=pumps">Pumps</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=office">Office Supplies & Stationery</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=electronics">Electronics & Appliances</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=it">IT & Communications</a></li>
+                    <li class="uk-submenu-item"><a href="supply_details.html?supply=strainers">Strainers & Filters</a></li>
 
-                        <!--<li class="uk-submenu-item"><a href="#v-pills-safety">Safety & Security</a></li>
-                        <li class="uk-submenu-item"><a href="#v-pills-janitorial">Janitorial Supplies & Cleaning Products</a></li>
-                        <li class="uk-submenu-item"><a href="#v-pills-oil">Oil and Lubricants</a></li>
-                        <li class="uk-submenu-item"><a href="#v-pills-hvac">HVAC (Heating, Ventilating and Air Conditioning)</a></li>-->
-                    </ul>
-                </li>
-                <li class="uk-menu-item uk-has-submenu">
-                    <a href="our_services.html" onclick="return false;">Our Services</a>
-                    <ul class="uk-submenu-long">
-                        <li class="uk-submenu-item"><a href="service_details.html?service=vehicle-leasing">Vehicle Leasing</a></li>
-                        <li class="uk-submenu-item"><a href="service_details.html?service=equipment-leasing">Equipment Leasing</a></li>
-                        <li class="uk-submenu-item"><a href="service_details.html?service=prefab">PREFAB</a></li>
-                        <li class="uk-submenu-item"><a href="service_details.html?service=chain-link-fencing">Chain Link Fencing</a></li>
-                        <li class="uk-submenu-item"><a href="service_details.html?service=generators">Generators</a></li>
-                    </ul>
-                </li>
-                <li class="uk-menu-item"><a href="gallery.html">Our Showroom</a></li>
-                <li class="uk-menu-item"><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+                    <!--<li class="uk-submenu-item"><a href="#v-pills-safety">Safety & Security</a></li>
+                    <li class="uk-submenu-item"><a href="#v-pills-janitorial">Janitorial Supplies & Cleaning Products</a></li>
+                    <li class="uk-submenu-item"><a href="#v-pills-oil">Oil and Lubricants</a></li>
+                    <li class="uk-submenu-item"><a href="#v-pills-hvac">HVAC (Heating, Ventilating and Air Conditioning)</a></li>-->
+                </ul>
+            </li>
+            <li class="uk-menu-item uk-has-submenu">
+                <a href="service_details.html">Our Services</a>
+                <ul class="uk-submenu-long">
+                    <li class="uk-submenu-item"><a href="service_details.html?service=vehicle-leasing">Vehicle Leasing</a></li>
+                    <li class="uk-submenu-item"><a href="service_details.html?service=equipment-leasing">Equipment Leasing</a></li>
+                    <li class="uk-submenu-item"><a href="service_details.html?service=prefab">PREFAB</a></li>
+                    <li class="uk-submenu-item"><a href="service_details.html?service=chain-link-fencing">Chain Link Fencing</a></li>
+                    <li class="uk-submenu-item"><a href="service_details.html?service=generators">Generators</a></li>
+                </ul>
+            </li>
+            <li class="uk-menu-item"><a href="gallery.html">Our Showroom</a></li>
+            <li class="uk-menu-item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
-    </header>
+</header>
 
-    <!-- header-end -->
+
+<!-- header-end -->
 
     <!-- bradcam_area  -->
     <div class="bradcam_area" style="background-image: url('img/banner/supply_details_banner_final.jpeg');">
@@ -351,83 +352,88 @@
 
 
     <!-- footer start -->
-    <footer class="footer">
-        <div class="footer_top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-md-6 col-lg-3">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Products
-                            </h3>
-                            <ul>
-                                <li><a href="#">Hardware Equipment’s & Tools</a></li>
-                                <li><a href="#">HVAC</a></li>
-                                <li><a href="#">Plumbing & Sanitation</a></li>
-                                <li><a href="#">Electrical</a></li>
-                                <li><a href="#">More >>></a></li>
-                            </ul>
+<footer class="footer">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Products
+                        </h3>
+                        <ul>
+                            <li><a href="supply_details.html?supply=furniture">Furniture and Fixtures</a></li>
+                            <li><a href="supply_details.html?supply=tools">Hardware Equipment’s & Tools</a></li>
+                            <li><a href="supply_details.html?supply=electrical">Electrical</a></li>
+                            <li><a href="supply_details.html?supply=plumbing">Plumbing & Sanitation</a></li>
+                            <!--
+                                                        <li><a href="#">More >>></a></li>
+                            -->
+                        </ul>
 
-                        </div>
                     </div>
-                    <div class="col-xl-2 col-md-6 col-lg-2">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Company
-                            </h3>
-                            <ul>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="our_supplies.html">Products</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-xl-2 col-md-6 col-lg-2">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Services
+                        </h3>
+                        <ul>
+                            <li><a href="service_details.html?service=vehicle-leasing">Vehicle Leasing</a></li>
+                            <li><a href="service_details.html?service=equipment-leasing">Equipment Leasing</a></li>
+                            <li><a href="service_details.html?service=prefab">PREFAB</a></li>
+                            <li><a href="service_details.html?service=chain-link-fencing">Chain Link Fencing</a></li>
+                        </ul>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-lg-3">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Office
-                            </h3>
-                            <ul>
-                                <li>Kingdom of Saudi Arabia</li>
-                                <li>Mob : -NA-</li>
-                                <li>Mon to Fri 9am to 6pm</li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Address
+                        </h3>
+                        <ul>
+                            <li>KSA</li>
+                            <li>Mob : +96</li>
+                            <li>Mon to Fri 9am to 6pm</li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-lg-4">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Get in touch with us
-                            </h3>
-                            <form action="#" class="newsletter_form">
-                                <input type="text" placeholder="Enter your mail">
-                                <button type="submit">Send</button>
-                            </form>
-                            <p class="newsletter_text">Our team will connect with you shortly. We're ready to provide the information and support you need, ensuring a smooth and efficient process. Expect prompt and personalized assistance from our dedicated experts.</p>
-                        </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Get in touch with us
+                        </h3>
+                        <form action="#" class="newsletter_form">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit">Send</button>
+                        </form>
+                        <p class="newsletter_text">Our team will connect with you shortly. We're
+                            ready to provide the information and support you need, ensuring a smooth
+                            and efficient process. Expect prompt and personalized assistance from
+                            our dedicated experts.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
+    </div>
+    <div class="copy-right_text">
+        <div class="container">
+            <div class="footer_border"></div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <p class="copy_right text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
                 </div>
             </div>
         </div>
-    </footer>
-
-    <!--/ footer end  -->
+    </div>
+</footer>
+<!--/ footer end  -->
 
   <!-- Modal -->
   <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -521,17 +527,6 @@
 });
 
 
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-const currentPage = window.location.pathname.split("/").pop(); // Get the current page name
-const ourBrandsMenu = document.getElementById('our-supplies-menu');
-
-if (currentPage === 'supply_details.html') {
-// Add the active class to the parent menu item
-ourBrandsMenu.classList.add('active');
-}
-});
 </script>
 
 </body>
