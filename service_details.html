@@ -33,12 +33,16 @@
 
 <body>
 
-
+<div id="loading-animation">
+    <div class="spinner"></div>
+</div>
     <!-- header-start -->
     <header class="uk-navbar">
-        <div class="uk-logo">
-            <img src="img/full_logo_hd_new.png" alt="Logo">
+        <a href="index.html">
+        <div class="uk-company-name">
+            United Commercial Space Company
         </div>
+    </a>
         <!-- <div class="uk-logo-name">
              <img src="img/logo_name.png" alt="Logo Name">
          </div>-->
@@ -78,7 +82,7 @@
                         <li class="uk-submenu-item"><a href="#v-pills-hvac">HVAC (Heating, Ventilating and Air Conditioning)</a></li>-->
                     </ul>
                 </li>
-                <li class="uk-menu-item uk-has-submenu">
+                <li class="uk-menu-item uk-has-submenu" id="our-service-menu">
                     <a href="our_services.html" onclick="return false;">Our Services</a>
                     <ul class="uk-submenu-long">
                         <li class="uk-submenu-item"><a href="service_details.html?service=vehicle-leasing">Vehicle Leasing</a></li>
@@ -412,7 +416,32 @@
             setActiveSupplyTab();
         });
     </script>
-    
+<script src="js/main.js"></script>
+<script>
+    window.addEventListener('load', function () {
+    const loader = document.getElementById('loading-animation');
+    if (loader) {
+        loader.style.transition = 'opacity 0.5s';
+        loader.style.opacity = '0';
+        setTimeout(() => {
+            loader.style.display = 'none'; // Completely remove after fade-out
+        }, 500); // Match the transition duration
+    }
+});
+
+
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+const currentPage = window.location.pathname.split("/").pop(); // Get the current page name
+const ourBrandsMenu = document.getElementById('our-service-menu');
+
+if (currentPage === 'service_details.html') {
+// Add the active class to the parent menu item
+ourBrandsMenu.classList.add('active');
+}
+});
+</script>
 </body>
 
 </html>

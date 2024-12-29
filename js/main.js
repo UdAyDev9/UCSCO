@@ -444,11 +444,11 @@ mailChimp();
 document.addEventListener('DOMContentLoaded', () => {
         const slider = document.querySelector('.slider_bg');
         const images = [
+            'url(img/banner/home_slider_5.jpeg)',
             'url(img/banner/home_slider_3.png)',
             'url(img/banner/home_slider_2.png)',
-            'url(img/banner/home_slider_1.jpeg)',
             'url(img/banner/home_slider_4.png)',
-            'url(img/banner/home_slider_5.jpeg)'
+            'url(img/banner/home_slider_1.jpeg)'
         ]; // List all your images here
         let currentIndex = 0;
 
@@ -550,3 +550,31 @@ $(document).ready(function(){
         const menu = document.querySelector('.uk-menu');
         menu.classList.toggle('show');
     }
+
+/*------------------Loading------------------*/
+/*window.addEventListener('load', function () {
+    const loader = document.getElementById('loading-animation');
+    if (loader) {
+        loader.style.display = 'none'; // Hide loader after page load
+    }
+});*/
+window.addEventListener('load', function () {
+    const loader = document.getElementById('loading-animation');
+    if (loader) {
+        loader.style.transition = 'opacity 0.5s';
+        loader.style.opacity = '0';
+        setTimeout(() => {
+            loader.style.display = 'none'; // Completely remove after fade-out
+        }, 500); // Match the transition duration
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+const currentPage = window.location.pathname.split("/").pop(); // Get the current page name
+const ourBrandsMenu = document.getElementById('our-brands-menu');
+
+if (currentPage === 'brand_details.html') {
+// Add the active class to the parent menu item
+ourBrandsMenu.classList.add('active');
+}
+});

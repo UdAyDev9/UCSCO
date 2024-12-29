@@ -175,6 +175,7 @@ body {
 .uk-menu-item.active a {
     color: var(--nav-hover-text-color);
     background-color: var(--nav-hover-bg-color);
+    font-weight: 600;
 }
 
 
@@ -334,14 +335,14 @@ body {
 .uk-company-name {
     color: #FF5733; /* Matches the vibrant orange-red of your theme */
     font-family: 'Balbek', sans-serif; /* Matches the website font for consistency */
-    font-size: 1.2rem; /* Base font size */
+    font-size: 1.3rem; /* Base font size */
     letter-spacing: 0.5px; /* Adds subtle spacing for a polished look */
 }
 
 /* Medium screens (tablets and smaller devices) */
 @media (max-width: 768px) {
     .uk-company-name {
-        font-size: 1rem; /* Slightly smaller font size for tablets */
+        font-size: 1.1rem; /* Slightly smaller font size for tablets */
         letter-spacing: 0.4px; /* Adjust spacing for smaller screens */
     }
 }
@@ -349,7 +350,7 @@ body {
 /* Small screens (mobile devices) */
 @media (max-width: 480px) {
     .uk-company-name {
-        font-size: 0.9rem; /* Further reduce font size for mobile devices */
+        font-size: 1rem; /* Further reduce font size for mobile devices */
         letter-spacing: 0.3px; /* Adjust spacing further */
     }
 }

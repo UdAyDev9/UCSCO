@@ -49,14 +49,20 @@
 </head>
 
 <body>
+<!-- Loading animation -->
+<div id="loading-animation">
+    <div class="spinner"></div>
+</div>
 <!-- header-start -->
 <header class="uk-navbar">
     <!--<div class="uk-logo">
         <img src="img/company_name_orange_only_small_2.png" alt="Logo">
     </div>-->
-    <div class="uk-company-name">
-        United Commercial Space Company
-    </div>
+        <a href="index.html">
+        <div class="uk-company-name">
+            United Commercial Space Company
+        </div>
+    </a>
     <button class="menu-toggle" onclick="toggleMenu()">
         <span>&#9776;</span>
     </button>
@@ -64,7 +70,7 @@
         <ul class="uk-menu">
             <li class="uk-menu-item"><a href="index.html">Home</a></li>
             <li class="uk-menu-item"><a href="about.html">About</a></li>
-            <li class="uk-menu-item uk-has-submenu">
+            <li class="uk-menu-item uk-has-submenu" id="our-brands-menu">
                 <a href="our_brands.html" onclick="return false;">Our Brands</a>
                 <ul class="uk-submenu">
                     <li class="uk-submenu-item"><a href="brand_details.html?brand=grainger">Grainger</a></li>
@@ -779,7 +785,6 @@
 
 
 <script src="js/main.js"></script>
-
 </body>
 
 </html>
